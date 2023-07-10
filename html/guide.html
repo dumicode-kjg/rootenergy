@@ -262,6 +262,37 @@
         })
       </script>
       <!--// Review -->
+
+      <!-- Tab -->
+      <h2 class="guide_title">Tab</h2>
+      <br>
+      <div class="tab_swiper">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide">
+            <a href="#" class="active">자산관리</a>
+          </li>
+          <li class="swiper-slide">
+            <a href="#">자산관리</a>
+          </li>
+          <li class="swiper-slide">
+            <a href="#">자산관리</a>
+          </li>
+          <li class="swiper-slide">
+            <a href="#">자산관리</a>
+          </li>
+        </ul>
+      </div>
+      <script>
+        $(function () {
+          var maTabSwiper = new Swiper('.tab_swiper', {
+            slidesPerView: 'auto',
+            spaceBetween: 24,
+            observer: true,
+            observeParents: true,
+          });
+        })
+      </script>
+      <!--// Tab -->
     </div>
     <!--// container -->
 

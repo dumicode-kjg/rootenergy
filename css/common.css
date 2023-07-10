@@ -71,6 +71,7 @@
   flex: 1;
 }
 
+/* main banner */
 .ma_bn_swiper {
   position: relative;
   padding: 16px 16px 25px;
@@ -198,6 +199,7 @@
   background: #2c3db8;
 }
 
+/* review */
 .ma_review_swiper {
   position: relative;
   padding: 13px 16px 25px;
@@ -303,6 +305,7 @@
   background: #2c3db8;
 }
 
+/* title */
 .title_box {
   display: flex;
   align-items: center;
@@ -313,6 +316,38 @@
   font-size: 20px;
   line-height: 1.4;
   font-weight: 700;
+}
+
+/* tab */
+.tab_swiper {
+  height: 30px;
+  padding: 0 20px;
+  border-bottom: 1px solid #f2f2f2;
+}
+.tab_swiper .swiper-slide {
+  width: auto;
+}
+.tab_swiper a {
+  display: block;
+  position: relative;
+  padding: 3px 0 7px;
+  color: #bfc3c7;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 600;
+}
+.tab_swiper a.active {
+  color: #2c3db8;
+}
+.tab_swiper a.active::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  border-radius: 3px;
+  background: #2c3db8;
 }
 
 /* progress */

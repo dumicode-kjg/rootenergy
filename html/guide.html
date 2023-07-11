@@ -23,7 +23,7 @@
 </head>
 
 <body>
-  <div id="wrap" class="bg">
+  <div id="wrap">
     <!-- header -->
     <header id="header">
       <div class="head_con">
@@ -272,27 +272,66 @@
             <a href="#" class="active">자산관리</a>
           </li>
           <li class="swiper-slide">
-            <a href="#">자산관리</a>
+            <a href="#">투자현황</a>
           </li>
           <li class="swiper-slide">
-            <a href="#">자산관리</a>
+            <a href="#">상환스케줄<span class="cnt">2</span></a>
           </li>
           <li class="swiper-slide">
-            <a href="#">자산관리</a>
+            <a href="#">개인정보관리</a>
           </li>
         </ul>
       </div>
       <script>
         $(function () {
-          var maTabSwiper = new Swiper('.tab_swiper', {
-            slidesPerView: 'auto',
-            spaceBetween: 24,
-            observer: true,
-            observeParents: true,
-          });
+          tabGo(0);
         })
       </script>
       <!--// Tab -->
+
+      <!-- Button -->
+      <h2 class="guide_title">Button</h2>
+      <br>
+      <div class="pl16 pr16">
+        <div>
+          <button type="button" class="btn_style h44 bg_blue">확인</button>
+          <button type="button" class="btn_style h44 bd_blue">인증요청</button>
+          <button type="button" class="btn_style h24 bd_gray02">입출금내역</button>
+        </div>
+        <br>
+        <div class="btn_box">
+          <button type="button" class="btn_style h48 bd_gray">취소</button>
+          <button type="button" class="btn_style h48 bg_blue">변경</button>
+        </div>
+        <br>
+        <div class="btn_box">
+          <a href="#" class="btn_style h48 bg_blue">확인</a>
+        </div>
+      </div>
+      <br>
+      <div class="btn_box">
+        <button type="button" class="btn_style h54 bg_blue">다음</button>
+      </div>
+      <!--// Button -->
+
+      <!-- Input -->
+      <h2 class="guide_title">Input</h2>
+      <br>
+      <div class="pl20 pr20">
+        <div class="flex_input">
+          <input type="text" class="text" placeholder="이메일을 입력해주세요">
+        </div>
+        <div class="flex_input">
+          <input type="text" class="text" placeholder="이메일을 입력해주세요" value="hong@naver.com">
+        </div>
+        <div class="flex_input">
+          <input type="text" class="text" placeholder="기타입력" disabled>
+        </div>
+        <div class="flex_input">
+          <input type="text" class="text error_input" placeholder="이메일을 입력해주세요" value="hong@naver.com">
+        </div>
+      </div>
+      <!--// Input -->
     </div>
     <!--// container -->
 

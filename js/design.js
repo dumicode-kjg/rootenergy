@@ -30,4 +30,18 @@ $(function () {
       $(this).toggleClass("wr", Boolean($(this).val()));
     })
     .trigger("propertychange");
+
+  $("select.select").each(function () {
+    if ($(this).val() == "" || $(this).val() == undefined) {
+      $(this).next('.nice-select').removeClass("wr");
+    } else {
+      $(this).next('.nice-select').addClass("wr");
+    }
+  });
+
+  $("select.select")
+    .on("change", function () {
+      $(this).next('.nice-select').toggleClass("wr", Boolean($(this).val()));
+    })
+    .trigger("propertychange");
 });

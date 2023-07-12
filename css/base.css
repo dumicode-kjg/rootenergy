@@ -88,6 +88,7 @@ body {
   font-weight: 400;
   font-family: "Pretendard", sans-serif;
   text-align: left;
+  overflow-x: hidden;
 }
 input,
 textarea,
@@ -158,16 +159,19 @@ button {
 ::-webkit-input-placeholder {
   color: #a3a7ab;
   font-size: 13px;
+  font-weight: 400;
 }
 
 :-ms-input-placeholder {
   color: #a3a7ab;
   font-size: 13px;
+  font-weight: 400;
 }
 
 ::placeholder {
   color: #a3a7ab;
   font-size: 13px;
+  font-weight: 400;
 }
 
 /*html5*/

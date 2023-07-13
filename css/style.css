@@ -1,15 +1,11 @@
-@charset "utf-8";
-
 /*
  Coding By DumiCode
  homepage: http://www.dumicode.com
 */
 
 /* font */
-@import url("fonts/Pretendard/Pretendard.css");
-
+@import url("fonts/Pretendard/Pretendard.css"); 
 /* default set */
-@import url("base.css");
-
+@import url("base.css"); 
 /* common */
-@import url("common.css");
+@import url("common.css"); 

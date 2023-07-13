@@ -29,7 +29,104 @@
       <div class="head_con">
         <a href="#" class="btn_my"></a>
         <h1 class="logo"><a href="#">ROOTENERGY</a></h1>
-        <button type="button" class="btn_menu"></button>
+        <button type="button" class="btn_menu" onclick="toggleMenu()"></button>
+        <!-- menu -->
+        <div class="menu_wrap">
+          <div class="menu_mask" onclick="toggleMenu()"></div>
+          <div class="menu_cont">
+            <div class="menu_head">
+              <p class="txt_welcome">환영합니다! <br>홍길동님</p>
+              <div class="user_type">
+                <span class="tip">상향신청</span>
+                <span class="txt">개인<br>투자자</span>
+              </div>
+            </div>
+            <div class="menu_info">
+              <!-- 로그인후 -->
+              <div class="bank_box">
+                <span class="name"><img src="../images/img_bank_nh.png" alt=""></span>
+                <p class="num">79018932303133<button class="copy"></button></p>
+                <dl class="amount">
+                  <dt>예치금</dt>
+                  <dd>1,000,000원</dd>
+                </dl>
+              </div>
+              <!--// 로그인후 -->
+              <ul class="menu_main">
+                <li>
+                  <a href="#">
+                    <div class="ico" style="background-image: url(../images/ico_menu_main01.svg);"></div>
+                    <span class="txt">투자현황</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="ico" style="background-image: url(../images/ico_menu_main02.svg);"></div>
+                    <span class="txt">마이페이지</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="ico" style="background-image: url(../images/ico_menu_main03.svg);"></div>
+                    <span class="txt">프로모션</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="menu_list">
+              <ul class="menu">
+                <li>
+                  <a href="#">
+                    <i class="ico" style="background-image: url(../images/ico_menu_list01.svg);"></i>
+                    <span>투자</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="ico" style="background-image: url(../images/ico_menu_list02.svg);"></i>
+                    <span>대출</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="ico" style="background-image: url(../images/ico_menu_list03.svg);"></i>
+                    <span>법인투자안내</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="ico" style="background-image: url(../images/ico_menu_list04.svg);"></i>
+                    <span>고객센터</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="ico" style="background-image: url(../images/ico_menu_list05.svg);"></i>
+                    <span>원리금수취권 거래소</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="ico" style="background-image: url(../images/ico_menu_list06.svg);"></i>
+                    <span>이웃신청 현황</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="ico" style="background-image: url(../images/ico_menu_list07.svg);"></i>
+                    <span>회사소개</span>
+                  </a>
+                </li>
+              </ul>
+              <!-- 로그인후 -->
+              <div class="logout_box">
+                <a href="#">로그아웃</a>
+              </div>
+              <!--// 로그인후 -->
+            </div>
+          </div>
+        </div>
+         <!--// menu -->
       </div>
       <nav class="gnb_box">
         <ul class="gnb">
@@ -386,90 +483,84 @@
           <!--// label_box -->
         </div>
       </div>
-    </div>
-    <!--// Checkboxes -->
+      <!--// Checkboxes -->
 
-    <!-- Radio buttons -->
-    <h2 class="guide_title">Radio buttons</h2>
-    <br>
-    <div class="pl20 pr20">
-      <div class="flex_input">
-        <!-- label_box -->
-        <div class="label_box">
-          <input type="radio" name="lb_radio" id="lb_radio01" checked>
-          <label for="lb_radio01">
-            <span class="txt">라디오버튼1</span>
-          </label>
+      <!-- Radio buttons -->
+      <h2 class="guide_title">Radio buttons</h2>
+      <br>
+      <div class="pl20 pr20">
+        <div class="flex_input">
+          <!-- label_box -->
+          <div class="label_box">
+            <input type="radio" name="lb_radio" id="lb_radio01" checked>
+            <label for="lb_radio01">
+              <span class="txt">라디오버튼1</span>
+            </label>
+          </div>
+          <div class="label_box">
+            <input type="radio" name="lb_radio" id="lb_radio02">
+            <label for="lb_radio02">
+              <span class="txt">라디오버튼2</span>
+            </label>
+          </div>
+          <!--// label_box -->
         </div>
-        <div class="label_box">
-          <input type="radio" name="lb_radio" id="lb_radio02">
-          <label for="lb_radio02">
-            <span class="txt">라디오버튼2</span>
-          </label>
-        </div>
-        <!--// label_box -->
       </div>
-    </div>
-  </div>
-  <!--// Radio buttons -->
+      <!--// Radio buttons -->
 
-  <!-- Choice chips -->
-  <h2 class="guide_title">Choice chips</h2>
-  <br>
-  <div class="pl20 pr20">
-    <ul class="choice_chips">
-      <li><a href="#" class="active">기후펀드</a></li>
-      <li><a href="#">커뮤니티펀드</a></li>
-      <!-- <li><a href="#">두줄 두줄이면 <br>이렇게</a></li> -->
-    </ul>
-  </div>
-  </div>
-  <!--// Choice chips -->
-  </div>
-  <!--// container -->
-
-  <!-- footer -->
-  <footer id="footer">
-    <dl class="foot_cs">
-      <dt>고객문의</dt>
-      <dd>
-        <a href="tel:027928934" class="tel">02.792.8934</a>
-        <p class="time">평일 09시~18시 (점심 12시~13시)</p>
-      </dd>
-    </dl>
-    <div class="foot_logo_sns">
-      <h2 class="foot_logo"><a href="#">ROOTENERGY</a></h2>
-      <ul class="foot_sns">
-        <li><a href="#" class="sns_youtube"></a></li>
-        <li><a href="#" class="sns_facebook"></a></li>
-        <li><a href="#" class="sns_blog"></a></li>
-        <li><a href="#" class="talk"></a></li>
-      </ul>
-    </div>
-    <div class="foot_con">
-      <ul class="foot_menu">
-        <li><a href="#">공지사항</a></li>
-        <li><a href="#">자주하는 질문</a></li>
-        <li><a href="#">채용</a></li>
-      </ul>
-      <ul class="foot_menu">
-        <li><a href="#">공지사항</a></li>
-        <li><a href="#">자주하는 질문</a></li>
-        <li><a href="#">채용</a></li>
-      </ul>
-      <div class="foot_link_box">
-        <ul class="foot_link">
-          <li><a href="#">서비스 이용약관</a></li>
-          <li><a href="#">전자금융거래약관</a></li>
-          <li><a href="#">개인정보처리방침</a></li>
-          <li><a href="#">신용정보 활용체계</a></li>
-          <li><a href="#">연계투자계약 약관</a></li>
+      <!-- Choice chips -->
+      <h2 class="guide_title">Choice chips</h2>
+      <br>
+      <div class="pl20 pr20">
+        <ul class="choice_chips">
+          <li><a href="#" class="active">기후펀드</a></li>
+          <li><a href="#">커뮤니티펀드</a></li>
+          <!-- <li><a href="#">두줄 두줄이면 <br>이렇게</a></li> -->
         </ul>
-        <div class="foot_certified"></div>
       </div>
+      <!--// Choice chips -->
+
+      <br>
     </div>
-  </footer>
-  <!--// footer -->
+    <!--// container -->
+
+    <!-- footer -->
+    <footer id="footer">
+      <dl class="foot_cs">
+        <dt>고객문의</dt>
+        <dd>
+          <a href="tel:027928934" class="tel">02.792.8934</a>
+          <p class="time">평일 09시~18시 (점심 12시~13시)</p>
+        </dd>
+      </dl>
+      <div class="foot_logo_sns">
+        <h2 class="foot_logo"><a href="#">ROOTENERGY</a></h2>
+        <ul class="foot_sns">
+          <li><a href="#" class="sns_youtube"></a></li>
+          <li><a href="#" class="sns_facebook"></a></li>
+          <li><a href="#" class="sns_blog"></a></li>
+          <li><a href="#" class="sns_talk"></a></li>
+        </ul>
+      </div>
+      <div class="foot_con">
+        <ul class="foot_menu">
+          <li><a href="#">공지사항</a></li>
+          <li><a href="#">자주하는 질문</a></li>
+          <li><a href="#">채용</a></li>
+        </ul>
+        <div class="foot_link_box">
+          <ul class="foot_link">
+            <li><a href="#">서비스 이용약관</a></li>
+            <li><a href="#">전자금융거래약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">신용정보 활용체계</a></li>
+            <li><a href="#">연계투자계약 약관</a></li>
+          </ul>
+          <div class="foot_certified"></div>
+        </div>
+      </div>
+    </footer>
+    <!--// footer -->
   </div>
 </body>
 

@@ -29,6 +29,7 @@
 .gnb a { display: block; padding: 0 20px; font-size: 15px; line-height: 34px; font-weight: 600; } 
 .gnb a span { position: relative; } 
 .gnb .active a span::before { content: ""; position: absolute; top: 50%; right: -8px; width: 5px; height: 5px; margin-top: -7px; border-radius: 100%; background: #197cff; } 
+.test {}
 
 /* container */
 #container { flex: 1; } 

@@ -22,14 +22,13 @@
 .menu_cont .menu_head .txt_welcome { color: #fff; font-size: 20px; line-height: 1.4; font-weight: 700; } 
 .menu_cont .menu_head .user_type { display: flex; justify-content: center; align-items: center; position: relative; width: 47px; height: 47px; padding: 4px; border-radius: 100%; background: #fff; color: #2c3db8; font-size: 12px; line-height: 1.2; font-weight: 600; text-align: center; } 
 .menu_cont .menu_head .user_type .tip { position: absolute; top: 0; right: 100%; margin-right: -8px; padding: 0 6px; border-radius: 8px; background: #77abf8; color: #fff; font-size: 9px; line-height: 16px; font-weight: 500; white-space: nowrap; } 
-.menu_info { padding: 0 20px 12px; } 
+.menu_info { padding: 0 20px; } 
 .menu_info .bank_box { display: flex; flex-direction: column; margin-top: -33px; padding: 12px 16px 14px; border: 1px solid #e0e1e2; border-radius: 10px; background: #fff; } 
 .menu_info .bank_box .name img { height: 15px; } 
 .menu_info .bank_box .num { display: flex; align-items: center; margin-top: 2px; font-size: 16px; line-height: 1.3; font-weight: 600; } 
 .menu_info .bank_box .num .copy { width: 10px; height: 10px; margin-left: 12px; background: url(../images/ico_copy.svg) no-repeat center; background-size: contain; } 
 .menu_info .bank_box .amount { display: flex; margin-top: 10px; border-radius: 10px; background: #f8faff; } 
-.menu_info .menu_main { display: flex; justify-content: space-between; padding: 0 24px; } 
-.menu_info .menu_main li { } 
+.menu_info .menu_main { display: flex; justify-content: space-between; padding: 20px 24px 12px; } 
 
 /* gnb */
 .gnb_box { padding: 0 16px; border-bottom: 1px solid rgba(224, 225, 226, 0.5); background: #fff; } 
@@ -37,7 +36,6 @@
 .gnb a { display: block; padding: 0 20px; font-size: 15px; line-height: 34px; font-weight: 600; } 
 .gnb a span { position: relative; } 
 .gnb .active a span::before { content: ""; position: absolute; top: 50%; right: -8px; width: 5px; height: 5px; margin-top: -7px; border-radius: 100%; background: #197cff; } 
-.test {}
 
 /* container */
 #container { flex: 1; } 

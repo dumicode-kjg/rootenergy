@@ -15,7 +15,7 @@ function tabGo(index) {
   $(".tab_swiper a").removeClass("active").eq(index).addClass("active");
 }
 
-// input
+// wr
 $(function () {
   $("input.text").each(function () {
     if ($(this).val() == "" || $(this).val() == undefined) {
@@ -33,15 +33,22 @@ $(function () {
 
   $("select.select").each(function () {
     if ($(this).val() == "" || $(this).val() == undefined) {
-      $(this).next('.nice-select').removeClass("wr");
+      $(this).next(".nice-select").removeClass("wr");
     } else {
-      $(this).next('.nice-select').addClass("wr");
+      $(this).next(".nice-select").addClass("wr");
     }
   });
 
   $("select.select")
     .on("change", function () {
-      $(this).next('.nice-select').toggleClass("wr", Boolean($(this).val()));
+      $(this)
+        .next(".nice-select")
+        .toggleClass("wr", Boolean($(this).val()));
     })
     .trigger("propertychange");
 });
+
+// menu
+function toggleMenu() {
+  $("body").toggleClass("openMenu");
+}

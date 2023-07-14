@@ -27,7 +27,9 @@
 .menu_info .bank_box .name img { height: 15px; } 
 .menu_info .bank_box .num { display: flex; align-items: center; margin-top: 2px; font-size: 16px; line-height: 1.3; font-weight: 600; } 
 .menu_info .bank_box .num .copy { width: 10px; height: 10px; margin-left: 12px; background: url(../images/ico_copy.svg) no-repeat center; background-size: contain; } 
-.menu_info .bank_box .amount { display: flex; margin-top: 10px; border-radius: 10px; background: #f8faff; } 
+.menu_info .bank_box .amount { display: flex; justify-content: space-between; margin-top: 10px; padding: 6px 12px; border-radius: 10px; background: #f8faff; font-size: 12px; line-height: 1.3; } 
+.menu_info .bank_box .amount dt {  font-weight: 400; }
+.menu_info .bank_box .amount dd { font-weight: 600; }
 .menu_info .menu_main { display: flex; justify-content: space-between; padding: 20px 24px 12px; } 
 
 /* gnb */

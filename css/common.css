@@ -9,7 +9,7 @@
 .guide_title { margin: 80px 16px 0; border-bottom: 1px solid #000; color: #000; font-size: 30px; line-height: 1.1; font-weight: 700; } 
 
 /* wrap */
-#wrap { display: flex; flex-direction: column; min-height: 100vh; background: #fff; } 
+#wrap { display: flex; flex-direction: column; min-height: calc(var(--vh, 1vh) * 100); background: #fff; } 
 #wrap.bg { background: #f5f7fa; } 
 
 /* header */
@@ -20,9 +20,9 @@
 .head_con .btn_menu { width: 24px; height: 24px; margin-left: auto; background: url(../images/ico_menu.svg) no-repeat center center/contain; z-index: 101; transition: .2s; } 
 
 /* menu */
-.menu_wrap { position: absolute; top: 0; left: 0; width: 0; height: 100vh; overflow: hidden; transition: 0s .2s; } 
+.menu_wrap { position: absolute; top: 0; left: 0; width: 0; height: calc(var(--vh, 1vh) * 100); overflow: hidden; transition: 0s .2s; } 
 .menu_mask { position: fixed; top: 0; right: 0; bottom: 0; width: 0; background: #222; opacity: 0; z-index: 99; } 
-.menu_cont { display: flex; flex-direction: column; position: absolute; top: 0; right: 0; width: 90%; height: 100vh; background: #fff; z-index: 100; transform: translateX(101%); transition: .2s; } 
+.menu_cont { display: flex; flex-direction: column; position: absolute; top: 0; right: 0; width: 90%; height: calc(var(--vh, 1vh) * 100); background: #fff; z-index: 100; transform: translateX(101%); transition: .2s; } 
 .menu_cont .menu_head { flex: none; display: flex; justify-content: space-between; align-items: center; min-height: 161px; padding: 20px; background: #2c3db8; } 
 .menu_cont .menu_head .txt_welcome { color: #fff; font-size: 20px; line-height: 1.4; font-weight: 700; } 
 .menu_cont .menu_head .user_type { display: flex; justify-content: center; align-items: center; position: relative; width: 47px; height: 47px; padding: 4px; border-radius: 100%; background: #fff; color: #2c3db8; font-size: 12px; line-height: 1.2; font-weight: 600; text-align: center; } 

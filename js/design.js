@@ -1,4 +1,12 @@
-// Tab
+/* vh set */
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty("--vh", `${vh}px`);
+$(window).on("resize", function () {
+  vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty("--vh", `${vh}px`);
+});
+
+/* Tab */
 var tabSwiper;
 $(function () {
   if ($(".tab_swiper").length) {
@@ -15,7 +23,7 @@ function tabGo(index) {
   $(".tab_swiper a").removeClass("active").eq(index).addClass("active");
 }
 
-// wr
+/* wr */
 $(function () {
   $("input.text").each(function () {
     if ($(this).val() == "" || $(this).val() == undefined) {
@@ -48,7 +56,7 @@ $(function () {
     .trigger("propertychange");
 });
 
-// menu
+/* menu */
 function toggleMenu() {
   $("body").toggleClass("openMenu");
 }

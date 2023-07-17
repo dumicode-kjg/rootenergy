@@ -174,11 +174,12 @@
 /* form */
 .flex_input { display: flex; flex-wrap: wrap; align-items: center; margin-top: 12px; } 
 .flex_input > * + * { margin-left: 8px; } 
-.flex_input input.text { flex: 1; height: 44px; padding: 0 15px; border: 1px solid #f2f2f2; border-radius: 10px; font-size: 14px; line-height: 1.5; font-weight: 600; background: #fbfbfb; outline: none; } 
+.flex_input input.text { flex: 1; min-width: none; height: 44px; padding: 0 15px; border: 1px solid #f2f2f2; border-radius: 10px; font-size: 14px; line-height: 1.5; font-weight: 600; background: #fbfbfb; outline: none; } 
 .flex_input input.text.wr,
 .flex_input input.text:focus { border-color: #2c3db8; } 
 .flex_input input.text:disabled { background: #f2f2f2; } 
 
+.flex_input select { display: none; }
 .flex_input .nice-select { flex: 1; display: flex; align-items: center; min-width: 0; height: 44px; padding: 0 33px 0 15px; border: 1px solid #f2f2f2; border-radius: 10px; color: #a3a7ab; font-size: 13px; line-height: 1.5; font-weight: 400; background: #fbfbfb; transition: none; } 
 .flex_input .nice-select:after { right: 15px; width: 14px; height: 14px; margin-top: -7px; border: none; background: url(../images/arrow_select.svg) no-repeat center center/contain; transform: rotate(0); transform-origin: center; } 
 .flex_input .nice-select .current { display: block; text-overflow: ellipsis; overflow: hidden; } 

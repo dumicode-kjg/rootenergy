@@ -41,16 +41,16 @@
           </p>
         </div>
 
-        <dl class="user_name">
+        <dl class="sub_username">
           <dt>이름</dt>
           <dd>홍길동</dd>
         </dl>
 
-        <h3 class="title_12">투자등급</h3>
+        <h3 class="sub_title_12">투자등급</h3>
         <ul class="radio_list">
           <li>
             <div class="label_box">
-              <input type="radio" name="grade" id="grade1" />
+              <input type="radio" name="grade" id="grade1" checked />
               <label for="grade1"></label>
             </div>
             <div class="in_head">
@@ -128,9 +128,15 @@
             </div>
           </li>
         </ul>
+        <script>
+          $('.radio_list .in_head').on('click', function(){
+            $(this).toggleClass('on');
+            $(this).next('.in_cont').slideToggle('fast');
+          })
+        </script>
 
         <div class="form_fileupload">
-          <h3 class="title_12">투자등급</h3>
+          <h3 class="sub_title_12">투자등급</h3>
           <a href="#" class="btn_conf">금융투자업자의 전문투자자 확인증</a>
           <div class="fileupload_box">
             <input type="file" id="file" />

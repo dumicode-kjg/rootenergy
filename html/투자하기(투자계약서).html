@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>투자상품리스트_상환완료</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes" />
+  <meta name="format-detection" content="telephone=no" />
+
+  <link type="text/css" rel="stylesheet" href="../js/swiper/swiper-bundle.min.css" />
+  <link type="text/css" rel="stylesheet" href="../js/nice-select/nice-select.css" />
+  <link type="text/css" rel="stylesheet" href="../css/style.css" />
+
+  <script src="../js/jquery-3.7.0.min.js"></script>
+  <script src="../js/swiper/swiper-bundle.min.js"></script>
+  <script src="../js/nice-select/jquery.nice-select.min.js"></script>
+  <script>
+    $(function () {
+      $("select").niceSelect();
+    });
+  </script>
+  <script src="../js/design.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <!-- header -->
+    <header id="header">
+      <div class="head_con">
+        <a href="#" class="btn_back"></a>
+        <h1 class="title">투자 설명서</h1>
+      </div>
+    </header>
+    <!--// header -->
+
+    <!-- container -->
+    <div id="container">
+      <div class="bl_box">
+        <!-- product_item -->
+        <div class="product_item">
+          <div class="imgbox">
+            <img src="../images/img_product01.png" alt="" class="img" />
+            <img src="../images/img_product01_s.png" alt="" class="s_img" />
+          </div>
+          <div class="txtbox">
+            <p class="num">태양광 255호 [139-1]</p>
+            <p class="name">
+              충주시·안산시 솔라9 지붕형 <br />
+              태양광 발전소 7호
+            </p>
+            <p class="date">모집기간 23.5.12(금) ~ 23.5.25(목)</p>
+          </div>
+        </div>
+        <!--// product_item -->
+
+        <div class="dl_flexlist">
+          <dl>
+            <dt>연 수익률</dt>
+            <dd>12.5%</dd>
+          </dl>
+          <dl>
+            <dt>투자기간</dt>
+            <dd>11개월</dd>
+          </dl>
+          <dl>
+            <dt>상품번호</dt>
+            <dd>R000377</dd>
+          </dl>
+          <dl>
+            <dt>상환방식</dt>
+            <dd>만기일시상환</dd>
+          </dl>
+          <dl>
+            <dt>상품종류</dt>
+            <dd>태양광</dd>
+          </dl>
+          <dl>
+            <dt>자금용도</dt>
+            <dd>건설자금</dd>
+          </dl>
+        </div>
+
+        <div class="progress_group">
+          <p class="txt_stit">투자 진행률</p>
+          <div class="progress_bar">
+            <!-- 진행율 있을시 -->
+            <div class="val" style="width: 63%;"></div>
+            <div class="bg"></div>
+            <!--// 진행율 있을시 -->
+            <!-- tip -->
+            <span class="tip bg_blue">모집 잔액 34,790,000원</span>
+            <!--// tip -->
+          </div>
+          <div class="progress_info">
+            <p class="total">
+              <em>1억 8,290만원</em>
+              / 2억 8,290만원
+            </p>
+            <p class="pct">63%</p>
+          </div>
+        </div>
+
+        <div class="body_gray">
+          <!-- 여기부터 -->
+        </div>
+      </div>
+    </div>
+    <!--// container -->
+  </div>
+</body>
+
+</html>

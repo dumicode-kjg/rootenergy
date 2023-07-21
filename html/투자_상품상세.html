@@ -1,411 +1,425 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <title>투자_상품상세</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes" />
-    <meta name="format-detection" content="telephone=no" />
 
-    <link type="text/css" rel="stylesheet" href="../js/swiper/swiper-bundle.min.css" />
-    <link type="text/css" rel="stylesheet" href="../js/nice-select/nice-select.css" />
-    <link type="text/css" rel="stylesheet" href="../css/style.css" />
+<head>
+  <title>투자_상품상세</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes" />
+  <meta name="format-detection" content="telephone=no" />
 
-    <script src="../js/jquery-3.7.0.min.js"></script>
-    <script src="../js/swiper/swiper-bundle.min.js"></script>
-    <script src="../js/nice-select/jquery.nice-select.min.js"></script>
-    <script>
-      $(function () {
-        $("select").niceSelect();
-      });
-    </script>
-    <script src="../js/design.js"></script>
-  </head>
+  <link type="text/css" rel="stylesheet" href="../js/swiper/swiper-bundle.min.css" />
+  <link type="text/css" rel="stylesheet" href="../js/nice-select/nice-select.css" />
+  <link type="text/css" rel="stylesheet" href="../css/style.css" />
 
-  <body>
-    <div id="wrap" class="bg">
-      <!-- header -->
-      <header id="header">
-        <div class="head_con">
-          <a href="#" class="btn_back"></a>
-          <button type="button" class="btn_share"></button>
+  <script src="../js/jquery-3.7.0.min.js"></script>
+  <script src="../js/swiper/swiper-bundle.min.js"></script>
+  <script src="../js/nice-select/jquery.nice-select.min.js"></script>
+  <script>
+    $(function () {
+      $("select").niceSelect();
+    });
+  </script>
+  <script src="../js/design.js"></script>
+</head>
+
+<body>
+  <div id="wrap" class="bg">
+    <!-- header -->
+    <header id="header">
+      <div class="head_con">
+        <a href="#" class="btn_back"></a>
+        <button type="button" class="btn_share"></button>
+      </div>
+    </header>
+    <!--// header -->
+
+    <!-- container -->
+    <div id="container">
+      <div class="product_view">
+        <p class="prd_num">태양광 255호 [139-1]</p>
+        <p class="prd_name">
+          충주시·안산시 솔라9 지붕형 <br />
+          태양광 발전소 7호
+        </p>
+        <p class="prd_date">모집기간 23.5.12(금) ~ 23.5.25(목)</p>
+        <div class="prd_imgbox">
+          <img src="../images/img_product01.png" alt="" class="img" />
+          <img src="../images/img_product01_s.png" alt="" class="s_img" />
         </div>
-      </header>
-      <!--// header -->
+        <div class="progress_group">
+          <div class="flex_dl">
+            <dl>
+              <dt class="point">연 수익률</dt>
+              <dd>12.5%</dd>
+            </dl>
+            <dl>
+              <dt>투자기간</dt>
+              <dd>6개월</dd>
+            </dl>
+            <dl>
+              <dt>상환방식</dt>
+              <dd class="small">만기일시상환</dd>
+            </dl>
+          </div>
+          <div class="progress_bar">
+            <!-- 진행율 있을시 -->
+            <div class="val" style="width: 83%"></div>
+            <!--// 진행율 있을시 -->
+          </div>
+          <div class="progress_info">
+            <p class="total">
+              <em>3억 1,775만원</em>
+              / 3억 8,000만원
+            </p>
+            <p class="pct">83%</p>
+          </div>
+        </div>
 
-      <!-- container -->
-      <div id="container">
-        <div class="product_view">
-          <p class="prd_num">태양광 255호 [139-1]</p>
-          <p class="prd_name">
-            충주시·안산시 솔라9 지붕형 <br />
-            태양광 발전소 7호
-          </p>
-          <p class="prd_date">모집기간 23.5.12(금) ~ 23.5.25(목)</p>
-          <div class="prd_imgbox">
-            <img src="../images/img_product01.png" alt="" class="img" />
-            <img src="../images/img_product01_s.png" alt="" class="s_img" />
+        <div class="detail_introbox">
+          <div class="detail_intro">
+            <p class="title">
+              100만원<i class="ico_down"></i> 투자하면<br />
+              <em>세후 120,224원</em>이 쌓여요
+            </p>
+            <dl class="revenue_dl">
+              <dt>세전 수익률</dt>
+              <dd>13.9%</dd>
+              <dt>세후 수익률</dt>
+              <dd>12.5%</dd>
+              <dt>순수 수익률</dt>
+              <dd>12.5%</dd>
+            </dl>
+            <a href="#" class="btn_style h24 bd_gray02">수익금 지급 예정표</a>
           </div>
-          <div class="progress_group">
-            <div class="flex_dl">
-              <dl>
-                <dt class="point">연 수익률</dt>
-                <dd>12.5%</dd>
-              </dl>
-              <dl>
-                <dt class="point">투자기간</dt>
-                <dd>6개월</dd>
-              </dl>
-              <dl>
-                <dt class="point">상환방식</dt>
-                <dd>만기일시상환</dd>
-              </dl>
-            </div>
-            <div class="progress_bar">
-              <!-- 진행율 있을시 -->
-              <div class="val" style="width: 83%"></div>
-              <div class="bg"></div>
-              <!--// 진행율 있을시 -->
-            </div>
-            <div class="progress_info">
-              <p class="total">
-                <em>3억 1,775만원</em>
-                / 3억 8,000만원
-              </p>
-              <p class="pct">83%</p>
-            </div>
+          <div class="detail_eco">
+            <p class="title">환경적 성과까지 함께!</p>
+            <ul class="eco_list">
+              <li>
+                <div class="imgbox">
+                  <img src="../images/ico_detail_eco01.svg" alt="" style="width: 1.7rem" />
+                </div>
+                <p class="tit">연간 전력생산</p>
+                <p class="val">868,501kW</p>
+              </li>
+              <li>
+                <div class="imgbox">
+                  <img src="../images/ico_detail_eco02.svg" alt="" style="width: 2.6rem" />
+                </div>
+                <p class="tit">화석 에너지</p>
+                <p class="val">127 kWh 대체</p>
+              </li>
+              <li>
+                <div class="imgbox">
+                  <img src="../images/ico_detail_eco03.svg" alt="" style="width: 3rem" />
+                </div>
+                <p class="tit">대기 오염물질</p>
+                <p class="val">58g 감소</p>
+              </li>
+            </ul>
           </div>
-
-          <div class="detail_introbox">
-            <div class="detail_intro">
-              <p class="title">
-                100만원<i class="ico_down"></i> 투자하면<br />
-                <em>세후 120,224원</em>이 쌓여요
-              </p>
-              <dl class="revenue_dl">
-                <dt>세전 수익률</dt>
-                <dd>13.9%</dd>
-                <dt>세후 수익률</dt>
-                <dd>12.5%</dd>
-                <dt>순수 수익률</dt>
-                <dd>12.5%</dd>
-              </dl>
-              <a href="#" class="btn_style h24 bd_gray02">수익금 지급 예정표</a>
-            </div>
-            <div class="detail_eco">
-              <p class="title">환경적 성과까지 함께!</p>
-              <ul class="eco_list">
-                <li>
-                  <div class="imgbox">
-                    <img src="../images/ico_detail_eco01.svg" alt="" style="width: 17px" />
-                  </div>
-                  <p class="tit">연간 전력생산</p>
-                  <p class="val">868,501kW</p>
-                </li>
-                <li>
-                  <div class="imgbox">
-                    <img src="../images/ico_detail_eco02.svg" alt="" style="width: 26px" />
-                  </div>
-                  <p class="tit">화석 에너지</p>
-                  <p class="val">127 kWh 대체</p>
-                </li>
-                <li>
-                  <div class="imgbox">
-                    <img src="../images/ico_detail_eco03.svg" alt="" style="width: 30px" />
-                  </div>
-                  <p class="tit">대기 오염물질</p>
-                  <p class="val">58g 감소</p>
-                </li>
-              </ul>
-            </div>
-          </div>
+        </div>
+        <div class="mt16 pr20 pl20">
           <p class="star_notif">* 플랫폼 이용료(1.2%), 세금(개인15.4% 기준) 제외한 순 수익금</p>
           <p class="star_notif">* 위 상환계획은 모집 완료시점과 대출 실행 일정에 따라서 변경될 수 있습니다.</p>
           <p class="star_notif">* 또한 중도상환, 연체 등으로 지급일자와 지급액에 차이가 있을 수 있습니다.</p>
+        </div>
 
-          <div class="detail_infobox">
-            <p class="title">인허가 및 착공 준비가 완료된 사업으로 준공 후 발전소 매각 대금으로 상환할예정입니다.</p>
-            <ul class="detail_infotab">
-              <li class="active">
-                <div class="inbox">
-                  <span class="di_type">상품 유형</span>
-                  <div class="imgbox">
-                    <img src="../images/ico_detail_infotab01.svg" alt="" style="width: 43px" />
-                  </div>
-                  <p class="tit">수익집중</p>
-                  <p class="tag">#건설자금계열</p>
+        <div class="detail_infobox">
+          <p class="title">인허가 및 착공 준비가 완료된 사업으로 준공 후 발전소 매각 대금으로 상환할 예정입니다.</p>
+          <ul class="detail_infotab">
+            <li class="active">
+              <div class="inbox">
+                <span class="di_type">상품 유형</span>
+                <div class="imgbox">
+                  <img src="../images/ico_detail_infotab01.svg" alt="" style="width: 4.3rem" />
+                </div>
+                <p class="tit">수익집중</p>
+                <p class="tag">#건설자금계열</p>
+              </div>
+            </li>
+            <li>
+              <div class="inbox">
+                <span class="di_type">상품 유형</span>
+                <div class="imgbox">
+                  <img src="../images/ico_detail_infotab02.svg" alt="" style="width: 4.3rem" />
+                </div>
+                <p class="tit">안정추구</p>
+                <p class="tag">#운영자금계열</p>
+              </div>
+            </li>
+            <li>
+              <div class="inbox">
+                <span class="di_type">상품 유형</span>
+                <div class="imgbox">
+                  <img src="../images/ico_detail_infotab03.svg" alt="" style="width: 3.7rem" />
+                </div>
+                <p class="tit">주민참여</p>
+                <p class="tag">#지역주민한정</p>
+              </div>
+            </li>
+          </ul>
+          <div class="detail_infotab_con active">
+            <h4 class="numtit">
+              <span class="num">1</span>
+              <span class="tit">준공 후 매각 확정</span>
+            </h4>
+            <p class="txt">본 사업은 대기업 계열의 태양광 전문 투자회사의 계약이 완료되어, 준공 후 매각 대금으로 대출금을 상환할 예정입니다.</p>
+            <h4 class="numtit">
+              <span class="num">2</span>
+              <span class="tit">인허가 완료</span>
+            </h4>
+            <p class="txt">발전사업허가, 개발행위허가가 모두 완료되었으며 배전용전기설비 이용신청접수 역시 완료되었습니다.</p>
+            <h4 class="numtit">
+              <span class="num">3</span>
+              <span class="tit">높은 수익률</span>
+            </h4>
+            <p class="txt">평지에 건설되는 육상형 태양광 발전소로 토목공사의 난이도가 낮습니다.</p>
+          </div>
+          <div class="detail_infotab_con">
+            <h4 class="numtit">
+              <span class="num">2</span>
+              <span class="tit">인허가 완료</span>
+            </h4>
+            <p class="txt">발전사업허가, 개발행위허가가 모두 완료되었으며 배전용전기설비 이용신청접수 역시 완료되었습니다.</p>
+            <h4 class="numtit">
+              <span class="num">1</span>
+              <span class="tit">준공 후 매각 확정</span>
+            </h4>
+            <p class="txt">본 사업은 대기업 계열의 태양광 전문 투자회사의 계약이 완료되어, 준공 후 매각 대금으로 대출금을 상환할 예정입니다.</p>
+          </div>
+          <div class="detail_infotab_con">
+            <h4 class="numtit">
+              <span class="num">3</span>
+              <span class="tit">높은 수익률</span>
+            </h4>
+            <p class="txt">평지에 건설되는 육상형 태양광 발전소로 토목공사의 난이도가 낮습니다.</p>
+          </div>
+        </div>
+        <script>
+          $(function () {
+            $('.detail_infotab > li').on('click', function () {
+              const index = $(this).index();
+              $('.detail_infotab > li, .detail_infotab_con').removeClass('active');
+              $(this).addClass('active');
+              $('.detail_infotab_con').eq(index).addClass('active');
+            });
+          })
+        </script>
+
+        <div class="detail_togglebox">
+          <!-- 디폴트 펼침시 .in_title에 on추가 .in_cont에 display: block; -->
+          <h3 class="in_title on">전문가 한마디</h3>
+          <div class="in_cont" style="display: block;">
+            <!-- 전문가 한마디 -->
+            <div class="expert_box">
+              <div class="expert_info">
+                <div class="imgbox"><img src="../images/img_expert01.png" alt="" /></div>
+                <div class="txtbox">
+                  <p class="name">황승규</p>
+                  <p class="pos">준법감시인</p>
+                </div>
+              </div>
+              <p class="expert_txt">충주시 솔라23 태양광 발전소는 337kW의 규모로 설치 되었습니다. 본 발전소는 장기고정가격 체결이 확정되었으며 설치 후 20년 동안 고정가격으로 전력을 판매하며, 발생한 매출을 통해 원리금 상환 재원으로 사용합니다.</p>
+              <p class="expert_cert">*준법감시인 심사필 제 23-라-24호</p>
+            </div>
+            <!--// 전문가 한마디 -->
+          </div>
+        </div>
+
+        <div class="detail_togglebox">
+          <h3 class="in_title">투자상세정보</h3>
+          <div class="in_cont">
+            <!-- 투자상세정보 -->
+            <div class="content_wrap">
+              <div class="imgbox">
+                <img src="../images/img_content01.png" alt="" />
+              </div>
+
+              <h4 class="tit">담보물 가치평가</h4>
+              <ul class="txts">
+                <li><span class="poa">-</span>준공이 완료되어 상업 운전 시작으로 시공 리스크가 없음</li>
+                <li><span class="poa">-</span>2022년 매출액 약 5.5천만원, 평균 발전시간 약 4.1시간</li>
+                <li><span class="poa">-</span>SMP, REC 예금 근질권 설정을 통한 미래 현금 흐름 담보확보 (대출액 대비 270%)</li>
+              </ul>
+
+              <h4 class="tit">선순위 채권현황 및 담보물 설정내용</h4>
+              <ul class="txts">
+                <li><span class="poa">-</span>사업 인허가 및 각종 계약에 대한 채권양도 담보</li>
+                <li><span class="poa">-</span>발전소 설비 및 기자재 등에 대한 포괄양도 담보</li>
+                <li><span class="poa">-</span>주식근질권 설정</li>
+                <li><span class="poa">-</span>예금 근질권 설정</li>
+                <li><span class="poa">-</span>SMP REC 매출 계좌 근질권 설정</li>
+              </ul>
+
+              <h4 class="tit">담보물 회수 예상 가격 및 처분 계획</h4>
+              <ul class="txts">
+                <li><span class="poa">-</span>준공이 완료되어 상업 운전 시작으로 시공 리스크가 없음</li>
+                <li><span class="poa">-</span>2022년 매출액 약 5.5천만원, 평균 발전시간 약 4.1시간</li>
+                <li><span class="poa">-</span>SMP, REC 예금 근질권 설정을 통한 미래 현금 흐름 담보확보 (대출액 대비 270%)</li>
+              </ul>
+            </div>
+            <!--// 투자상세정보 -->
+          </div>
+        </div>
+
+        <div class="detail_togglebox">
+          <h3 class="in_title">투자개요</h3>
+          <div class="in_cont">
+            <!-- 투자개요 -->
+            <div class="content_wrap">투자개요</div>
+            <!--// 투자개요 -->
+          </div>
+        </div>
+
+        <div class="detail_togglebox">
+          <h3 class="in_title">투자일정</h3>
+          <div class="in_cont">
+            <!-- 투자일정 -->
+            <div class="content_wrap">투자일정</div>
+            <!--// 투자일정 -->
+          </div>
+        </div>
+
+        <div class="detail_togglebox">
+          <h3 class="in_title">상품 리포트</h3>
+          <div class="in_cont">
+            <!-- 상품 리포트 -->
+            <div class="content_wrap">상품 리포트</div>
+            <!--// 상품 리포트 -->
+          </div>
+        </div>
+
+        <div class="detail_togglebox">
+          <h3 class="in_title">증빙서류</h3>
+          <div class="in_cont">
+            <!-- 증빙서류 -->
+            <div class="doc_evidence">
+              <a href="#" class="file" download>기타 증빙서류</a>
+              <a href="#" class="file" download>전기안전관리자 증명서</a>
+              <a href="#" class="file" download>태양광발전소 종합공제 공제 증권</a>
+            </div>
+            <!--// 증빙서류 -->
+          </div>
+        </div>
+
+        <div class="detail_togglebox">
+          <h3 class="in_title">강화된 투자자 보호 방안</h3>
+          <div class="in_cont">
+            <!-- 강화된 투자자 보호 방안 -->
+            <ul class="sub_tab">
+              <li><a href="#" class="active">투자자 보호장치</a></li>
+              <li><a href="#">투자 리스크</a></li>
+              <li><a href="#">투자 유의사항</a></li>
+            </ul>
+            <div class="sub_tabcon active">
+              <div class="content_wrap">
+                <h4 class="tit">01. 인허가 및 계약</h4>
+                <ul class="txts">
+                  <li><span class="poa">-</span>인허가 완료 (발전사업허가, 건축신고 등)</li>
+                  <li><span class="poa">-</span>한국전력 계통연계 지점 확보</li>
+                  <li><span class="poa">-</span>개발행위 준공 허가 완료</li>
+                  <li><span class="poa">-</span>공사도급계약 체결 완료</li>
+                </ul>
+
+                <h4 class="tit">02. 담보관리</h4>
+                <ul class="txts">
+                  <li><span class="poa">-</span>주식 근질권 및 예금 근질권 설정</li>
+                  <li><span class="poa">-</span>채권양도 담보계약(인허가 및 각종 계약 상 권리 등)</li>
+                  <li><span class="poa">-</span>동산(발전소 설비 및 각종 기자재 등)에 대한 포괄양도담보권 설정</li>
+                </ul>
+
+                <h4 class="tit">03. 자금관리</h4>
+                <ul class="txts">
+                  <li><span class="poa">-</span>(주)루트에너지에서 대출금 관리 대행</li>
+                  <li><span class="poa">-</span>대출 전 합의된 자금 지출계획(공사 기성)에 따라 자금 집행관리</li>
+                </ul>
+
+                <h4 class="tit">04. 리스크 저감 및 신용보강</h4>
+                <ul class="txts">
+                  <li><span class="poa">-</span>대표자 연대보증</li>
+                  <li><span class="poa">-</span>모듈, 인버터 등 주요 기자재의 제조사 효율 및 성능 보증</li>
+                </ul>
+              </div>
+            </div>
+            <div class="sub_tabcon">
+              <div class="content_wrap">
+                <h4 class="tit">01. 투자 리스크</h4>
+                <ul class="txts">
+                  <li><span class="poa">-</span>투자 리스크</li>
+                </ul>
+              </div>
+            </div>
+            <div class="sub_tabcon">
+              <div class="content_wrap">
+                <h4 class="tit">01. 투자 유의사항</h4>
+                <ul class="txts">
+                  <li><span class="poa">-</span>투자 유의사항</li>
+                </ul>
+              </div>
+            </div>
+            <!--// 강화된 투자자 보호 방안 -->
+          </div>
+        </div>
+
+        <!-- 자주묻는질문 -->
+        <div class="ma_white_box mt20 pb50">
+          <div class="in_head">
+            <i class="ico" style="background-image: url(../images/ico_whitebox_faq.svg)"></i>
+            <h3 class="title">자주묻는질문</h3>
+            <a href="#" class="more">전체보기</a>
+          </div>
+          <div class="in_cont">
+            <ul class="ma_faq">
+              <li>
+                <div class="titbox">
+                  <i class="ico">Q</i>
+                  <p class="tit">투자상품 수익률과 투자기간은 어떻게 어떻게 되나요?</p>
+                </div>
+                <div class="conbox">
+                  <p class="con">답변 내용입니다. 답변 내용입니다. 답변 내용입니다. 답변 내용입니다. 답변 내용입니다. 답변 내용입니다. 답변 내용입니다. 답변 내용입니다. 답변 내용입니다. 답변 내용입니다. 답변 내용입니다.</p>
                 </div>
               </li>
               <li>
-                <div class="inbox">
-                  <span class="di_type">상품 유형</span>
-                  <div class="imgbox">
-                    <img src="../images/ico_detail_infotab02.svg" alt="" style="width: 43px" />
-                  </div>
-                  <p class="tit">안정추구</p>
-                  <p class="tag">#운영자금계열</p>
+                <div class="titbox">
+                  <i class="ico">Q</i>
+                  <p class="tit">투자금 중도회수가 가능한가요?</p>
+                </div>
+                <div class="conbox">
+                  <p class="con">답변 내용입니다.</p>
                 </div>
               </li>
               <li>
-                <div class="inbox">
-                  <span class="di_type">상품 유형</span>
-                  <div class="imgbox">
-                    <img src="../images/ico_detail_infotab03.svg" alt="" style="width: 37px" />
-                  </div>
-                  <p class="tit">주민참여</p>
-                  <p class="tag">#지역주민한정</p>
+                <div class="titbox">
+                  <i class="ico">Q</i>
+                  <p class="tit">원금이 보장되나요?</p>
+                </div>
+                <div class="conbox">
+                  <p class="con">
+                    답변 내용입니다. <br />
+                    답변 내용입니다.
+                  </p>
                 </div>
               </li>
             </ul>
-            <div class="detail_infotab_con active">
-              <h4 class="numtit">
-                <span class="num">1</span>
-                <span class="tit">준공 후 매각 확정</span>
-              </h4>
-              <p class="txt">본 사업은 대기업 계열의 태양광 전문 투자회사의 계약이 완료되어, 준공 후 매각 대금으로 대출금을 상환할 예정입니다.</p>
-              <h4 class="numtit">
-                <span class="num">2</span>
-                <span class="tit">인허가 완료</span>
-              </h4>
-              <p class="txt">발전사업허가, 개발행위허가가 모두 완료되었으며 배전용전기설비 이용신청접수 역시 완료되었습니다.</p>
-              <h4 class="numtit">
-                <span class="num">3</span>
-                <span class="tit">높은 수익률</span>
-              </h4>
-              <p class="txt">평지에 건설되는 육상형 태양광 발전소로 토목공사의 난이도가 낮습니다.</p>
-            </div>
-            <div class="detail_infotab_con">
-              <h4 class="numtit">
-                <span class="num">2</span>
-                <span class="tit">인허가 완료</span>
-              </h4>
-              <p class="txt">발전사업허가, 개발행위허가가 모두 완료되었으며 배전용전기설비 이용신청접수 역시 완료되었습니다.</p>
-              <h4 class="numtit">
-                <span class="num">1</span>
-                <span class="tit">준공 후 매각 확정</span>
-              </h4>
-              <p class="txt">본 사업은 대기업 계열의 태양광 전문 투자회사의 계약이 완료되어, 준공 후 매각 대금으로 대출금을 상환할 예정입니다.</p>
-            </div>
-            <div class="detail_infotab_con">
-              <h4 class="numtit">
-                <span class="num">3</span>
-                <span class="tit">높은 수익률</span>
-              </h4>
-              <p class="txt">평지에 건설되는 육상형 태양광 발전소로 토목공사의 난이도가 낮습니다.</p>
-            </div>
-          </div>
-
-          <div class="detail_togglebox">
-            <h3 class="in_title">전문가 한마디</h3>
-            <div class="in_cont">
-              <!-- 전문가 한마디 -->
-              <div class="expert_box">
-                <div class="expert_info">
-                  <div class="imgbox"><img src="../images/img_expert01.png" alt="" /></div>
-                  <div class="txtbox">
-                    <p class="name">황승규</p>
-                    <p class="pos">준법감시인</p>
-                  </div>
-                </div>
-                <p class="expert_txt">충주시 솔라23 태양광 발전소는 337kW의 규모로 설치 되었습니다. 본 발전소는 장기고정가격 체결이 확정되었으며 설치 후 20년 동안 고정가격으로 전력을 판매하며, 발생한 매출을 통해 원리금 상환 재원으로 사용합니다.</p>
-                <p class="expert_cert">*준법감시인 심사필 제 23-라-24호</p>
-              </div>
-              <!--// 전문가 한마디 -->
-            </div>
-          </div>
-
-          <div class="detail_togglebox">
-            <h3 class="in_title">투자상세정보</h3>
-            <div class="in_cont">
-              <!-- 투자상세정보 -->
-              <div class="content_wrap">
-                <div class="imgbox">
-                  <img src="../images/img_content01.png" alt="" />
-                </div>
-
-                <h4 class="tit">담보물 가치평가</h4>
-                <ul class="txts">
-                  <li><span class="poa">-</span>준공이 완료되어 상업 운전 시작으로 시공 리스크가 없음</li>
-                  <li><span class="poa">-</span>2022년 매출액 약 5.5천만원, 평균 발전시간 약 4.1시간</li>
-                  <li><span class="poa">-</span>SMP, REC 예금 근질권 설정을 통한 미래 현금 흐름 담보확보 (대출액 대비 270%)</li>
-                </ul>
-
-                <h4 class="tit">선순위 채권현황 및 담보물 설정내용</h4>
-                <ul class="txts">
-                  <li><span class="poa">-</span>사업 인허가 및 각종 계약에 대한 채권양도 담보</li>
-                  <li><span class="poa">-</span>발전소 설비 및 기자재 등에 대한 포괄양도 담보</li>
-                  <li><span class="poa">-</span>주식근질권 설정</li>
-                  <li><span class="poa">-</span>예금 근질권 설정</li>
-                  <li><span class="poa">-</span>SMP REC 매출 계좌 근질권 설정</li>
-                </ul>
-
-                <h4 class="tit">담보물 회수 예상 가격 및 처분 계획</h4>
-                <ul class="txts">
-                  <li><span class="poa">-</span>준공이 완료되어 상업 운전 시작으로 시공 리스크가 없음</li>
-                  <li><span class="poa">-</span>2022년 매출액 약 5.5천만원, 평균 발전시간 약 4.1시간</li>
-                  <li><span class="poa">-</span>SMP, REC 예금 근질권 설정을 통한 미래 현금 흐름 담보확보 (대출액 대비 270%)</li>
-                </ul>
-              </div>
-              <!--// 투자상세정보 -->
-            </div>
-          </div>
-
-          <div class="detail_togglebox">
-            <h3 class="in_title">투자개요</h3>
-            <div class="in_cont">
-              <!-- 투자개요 -->
-              투자개요
-              <!--// 투자개요 -->
-            </div>
-          </div>
-
-          <div class="detail_togglebox">
-            <h3 class="in_title">투자일정</h3>
-            <div class="in_cont">
-              <!-- 투자일정 -->
-              투자일정
-              <!--// 투자일정 -->
-            </div>
-          </div>
-
-          <div class="detail_togglebox">
-            <h3 class="in_title">상품 리포트</h3>
-            <div class="in_cont">
-              <!-- 상품 리포트 -->
-              상품 리포트
-              <!--// 상품 리포트 -->
-            </div>
-          </div>
-
-          <div class="detail_togglebox">
-            <h3 class="in_title">증빙서류</h3>
-            <div class="in_cont">
-              <!-- 증빙서류 -->
-              <div class="doc_evidence">
-                <a href="#" class="file">기타 증빙서류</a>
-                <a href="#" class="file">전기안전관리자 증명서</a>
-                <a href="#" class="file">태양광발전소 종합공제 공제 증권</a>
-              </div>
-              <!--// 증빙서류 -->
-            </div>
-          </div>
-
-          <div class="detail_togglebox">
-            <h3 class="in_title">강화된 투자자 보호 방안</h3>
-            <div class="in_cont">
-              <!-- 강화된 투자자 보호 방안 -->
-              <ul class="sub_tab">
-                <li><a href="#" class="active">투자자 보호장치</a></li>
-                <li><a href="#">투자 리스크</a></li>
-                <li><a href="#">투자 유의사항</a></li>
-              </ul>
-              <div class="sub_tabcon active">
-                <div class="content_wrap">
-                  <h4 class="tit">01. 인허가 및 계약</h4>
-                  <ul class="txts">
-                    <li><span class="poa">-</span>인허가 완료 (발전사업허가, 건축신고 등)</li>
-                    <li><span class="poa">-</span>한국전력 계통연계 지점 확보</li>
-                    <li><span class="poa">-</span>개발행위 준공 허가 완료</li>
-                    <li><span class="poa">-</span>공사도급계약 체결 완료</li>
-                  </ul>
-
-                  <h4 class="tit">02. 담보관리</h4>
-                  <ul class="txts">
-                    <li><span class="poa">-</span>주식 근질권 및 예금 근질권 설정</li>
-                    <li><span class="poa">-</span>채권양도 담보계약(인허가 및 각종 계약 상 권리 등)</li>
-                    <li><span class="poa">-</span>동산(발전소 설비 및 각종 기자재 등)에 대한 포괄양도담보권 설정</li>
-                  </ul>
-
-                  <h4 class="tit">03. 자금관리</h4>
-                  <ul class="txts">
-                    <li><span class="poa">-</span>(주)루트에너지에서 대출금 관리 대행</li>
-                    <li><span class="poa">-</span>대출 전 합의된 자금 지출계획(공사 기성)에 따라 자금 집행관리</li>
-                  </ul>
-
-                  <h4 class="tit">04. 리스크 저감 및 신용보강</h4>
-                  <ul class="txts">
-                    <li><span class="poa">-</span>대표자 연대보증</li>
-                    <li><span class="poa">-</span>모듈, 인버터 등 주요 기자재의 제조사 효율 및 성능 보증</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="sub_tabcon">
-                <div class="content_wrap">
-                  <h4 class="tit">01. 투자 리스크</h4>
-                  <ul class="txts">
-                    <li><span class="poa">-</span>투자 리스크</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="sub_tabcon">
-                <div class="content_wrap">
-                  <h4 class="tit">01. 투자 유의사항</h4>
-                  <ul class="txts">
-                    <li><span class="poa">-</span>투자 유의사항</li>
-                  </ul>
-                </div>
-              </div>
-              <!--// 강화된 투자자 보호 방안 -->
-            </div>
-          </div>
-
-          <!-- 자주묻는질문 -->
-          <div class="ma_white_box pb50">
-            <div class="in_head">
-              <i class="ico" style="background-image: url(../images/ico_whitebox_faq.svg)"></i>
-              <h3 class="title">자주묻는질문</h3>
-              <a href="#" class="more">전체보기</a>
-            </div>
-            <div class="in_cont">
-              <ul class="ma_faq">
-                <li>
-                  <div class="titbox">
-                    <i class="ico">Q</i>
-                    <p class="tit">투자상품 수익률과 투자기간은 어떻게 어떻게 되나요?</p>
-                  </div>
-                  <div class="conbox">
-                    <p class="con">답변 내용입니다. 답변 내용입니다. 답변 내용입니다. 답변 내용입니다. 답변 내용입니다. 답변 내용입니다. 답변 내용입니다. 답변 내용입니다. 답변 내용입니다. 답변 내용입니다. 답변 내용입니다.</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="titbox">
-                    <i class="ico">Q</i>
-                    <p class="tit">투자금 중도회수가 가능한가요?</p>
-                  </div>
-                  <div class="conbox">
-                    <p class="con">답변 내용입니다.</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="titbox">
-                    <i class="ico">Q</i>
-                    <p class="tit">원금이 보장되나요?</p>
-                  </div>
-                  <div class="conbox">
-                    <p class="con">
-                      답변 내용입니다. <br />
-                      답변 내용입니다.
-                    </p>
-                  </div>
-                </li>
-              </ul>
-              <script>
-                $(function () {
-                  $(".ma_faq .titbox").on("click", function () {
-                    $(this).toggleClass("on").next(".conbox").slideToggle("fast");
-                  });
+            <script>
+              $(function () {
+                $(".ma_faq .titbox").on("click", function () {
+                  $(this).toggleClass("on").next(".conbox").slideToggle("fast");
                 });
-              </script>
-            </div>
+              });
+            </script>
           </div>
-          <!--// 자주묻는질문 -->
         </div>
-      </div>
-      <!--// container -->
-
-      <!-- 버튼 스타일 확인필요 fixed? -->
-      <div class="btn_box">
-        <button type="button" class="btn_style h54 bg_blue">투자하기</button>
+        <!--// 자주묻는질문 -->
       </div>
     </div>
-  </body>
+    <!--// container -->
+
+    <!-- 버튼 스타일 확인필요 fixed? -->
+    <div class="btn_box">
+      <button type="button" class="btn_style h54 bg_blue">투자하기</button>
+    </div>
+  </div>
+</body>
+
 </html>

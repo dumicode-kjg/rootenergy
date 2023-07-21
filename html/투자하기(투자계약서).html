@@ -2,7 +2,7 @@
 <html lang="ko">
 
 <head>
-  <title>투자상품리스트_상환완료</title>
+  <title>투자하기(투자계약서)</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes" />
   <meta name="format-detection" content="telephone=no" />
@@ -56,27 +56,27 @@
         <div class="dl_flexlist">
           <dl>
             <dt>연 수익률</dt>
-            <dd>12.5%</dd>
+            <dd><strong>12.5%</strong></dd>
           </dl>
           <dl>
             <dt>투자기간</dt>
-            <dd>11개월</dd>
+            <dd><strong>11개월</strong></dd>
           </dl>
           <dl>
             <dt>상품번호</dt>
-            <dd>R000377</dd>
+            <dd><strong>R000377</strong></dd>
           </dl>
           <dl>
             <dt>상환방식</dt>
-            <dd>만기일시상환</dd>
+            <dd><strong>만기일시상환</strong></dd>
           </dl>
           <dl>
             <dt>상품종류</dt>
-            <dd>태양광</dd>
+            <dd><strong>태양광</strong></dd>
           </dl>
           <dl>
             <dt>자금용도</dt>
-            <dd>건설자금</dd>
+            <dd><strong>건설자금</strong></dd>
           </dl>
         </div>
 
@@ -85,7 +85,6 @@
           <div class="progress_bar">
             <!-- 진행율 있을시 -->
             <div class="val" style="width: 63%;"></div>
-            <div class="bg"></div>
             <!--// 진행율 있을시 -->
             <!-- tip -->
             <span class="tip bg_blue">모집 잔액 34,790,000원</span>
@@ -100,9 +99,230 @@
           </div>
         </div>
 
+        <!-- gray -->
         <div class="body_gray">
-          <!-- 여기부터 -->
+
+          <!-- 특수투자자 전환하기 -->
+          <div class="flex_txtlimit">
+            <i class="ico_coin"></i>
+            <p>더 높은 투자한도를 원한다면?</p>
+            <a href="#">특수투자자 전환하기 &gt;</a>
+          </div>
+          <!--// 특수투자자 전환하기 -->
+
+          <div class="sub_whitebox">
+            <div class="sub_s_title_box">
+              <h3 class="title">투자자 정보</h3>
+            </div>
+            <div class="dl_flexlist">
+              <dl>
+                <dt>회원명</dt>
+                <dd>홍길동</dd>
+              </dl>
+              <dl>
+                <dt>투자등급</dt>
+                <dd>개인투자자</dd>
+              </dl>
+            </div>
+          </div>
+
+          <div class="sub_s_title_box">
+            <h3 class="title">투자방법</h3>
+          </div>
+          <div class="inv_method_swiper">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <a href="#" class="inbox">
+                  <div class="imgbox">
+                    <img src="../images/bg_inv_method01.png" alt="">
+                  </div>
+                  <div class="txtbox">
+                    <p class="tit">개인전용 가상계좌번호 확인</p>
+                    <p class="txt">아래 가상계좌번호를 확인해주세요</p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#" class="inbox">
+                  <div class="imgbox">
+                    <img src="../images/bg_inv_method02.png" alt="">
+                  </div>
+                  <div class="txtbox">
+                    <p class="tit">예치금 입금</p>
+                    <p class="txt">*가입 시 등록한 출금계좌에서만 입금가능</p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#" class="inbox">
+                  <div class="imgbox">
+                    <img src="../images/bg_inv_method02.png" alt="">
+                  </div>
+                  <div class="txtbox">
+                    <p class="tit">투자 준비 완료</p>
+                    <p class="txt">이제 마음껏 투자하세요!</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <div class=" swiper-pagination">
+            </div>
+          </div>
+          <script>
+            $(function () {
+              var invMethodSwiper = new Swiper('.inv_method_swiper', {
+                slidesPerView: 1.13,
+                spaceBetween: 16,
+                observer: true,
+                observeParents: true,
+                // loop: true,
+                // autoplay: {
+                //   delay: 3000,
+                //   disableOnInteraction: false,
+                // },
+                pagination: {
+                  el: '.inv_method_swiper .swiper-pagination',
+                },
+              });
+            })
+          </script>
+
+          <div class="bank_card">
+            <button type="button" class="btn_refresh">새로고침</button>
+            <div class="cntbox">
+              <p class="tit">예치금 잔액</p>
+              <p class="cnt"><em>0</em>원</p>
+            </div>
+            <div class="bank_info">
+              <dl class="accountnum">
+                <dt>가상계좌번호</dt>
+                <dd>
+                  <span class="bank_logo"><img src="../images/logo_bank_nh.png" alt=""></span>
+                  <span class="num">
+                    0000-00-000000
+                    <p class="tip">위 계좌로 <em>예치금을 입금</em>해주세요!</p>
+                  </span>
+                  <button type="button" class="btn_copy">복사</button>
+                </dd>
+              </dl>
+              <dl class="username">
+                <dt>예금주</dt>
+                <dd>홍길동</dd>
+              </dl>
+            </div>
+          </div>
+
+          <div class="bank_amount">
+            <h3 class="title">투자 금액 (예치금) 입력</h3>
+            <dl class="dl_amount">
+              <dt>투자가능금액</dt>
+              <dd>5,000,000원</dd>
+            </dl>
+            <div class="wr_amount">
+              <input type="text" class="input_amount" placeholder="최소 투자금액 10,000원 부터 입력">
+              <span class="txt">원</span>
+            </div>
+          </div>
+
+          <div class="sub_whitebox">
+            <div class="sub_s_title_box">
+              <h3 class="title">투자위험 고지 안내</h3>
+              <p class="title_p">
+                본 투자상품은 원금이 보장되지 않습니다. <br>
+                또한 차입자가 원금의 전부 또는 일부를 상환하지 못할 경우 발생하게되는 투자금 손실 등 투자위험은 투자자가 부담하게 됩니다.
+              </p>
+            </div>
+            <div class="invintro_box">
+              <p class="txtchk">
+                나 홍길동은(는) <br>
+                상기 내용을 확인하였으며, 그 내용에
+              </p>
+              <div class="flex_box">
+                <input type="text" class="text" placeholder="동의함 (직접입력)">
+              </div>
+              <p class="star_notif mt12">*투자 진행을 위해서 '동의함'을 직접 입력해주세요</p>
+            </div>
+          </div>
+
+          <div class="terms_area">
+            <p class="terms_txt">
+              본인은 투자위험을 인지하였으며, 온투법 제 23조 제 1항에 따라 위 내용의 투자계약서와 연계투자계약 약관에 동의합니다.
+            </p>
+            <div class="terms_box">
+              <input type="checkbox" id="invChk">
+              <label for="invChk">약관에 동의합니다.</label>
+            </div>
+          </div>
+
+          <div class="detail_togglebox">
+            <h3 class="in_title">수수료 안내</h3>
+            <div class="in_cont">
+              <!-- 수수료 안내 -->
+              <div class="charge_box">
+                <table class="table_data">
+                  <caption>수수료 안내</caption>
+                  <colgroup>
+                    <col>
+                    <col>
+                    <col>
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th scope="col">구분</th>
+                      <th scope="col">소득세율</th>
+                      <th scope="col">주민세율</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>일반</td>
+                      <td>14%</td>
+                      <td>1.4%</td>
+                    </tr>
+                    <tr>
+                      <td>대부업</td>
+                      <td>0%</td>
+                      <td>0%</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <table class="table_data">
+                  <caption>플랫폼 이용 수수료</caption>
+                  <colgroup>
+                    <col>
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th scope="col">플랫폼 이용 수수료</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1.2%</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--// 수수료 안내 -->
+            </div>
+          </div>
+
+          <div class="btn_box mt30 pr16 pl16">
+            <button class="btn_style h48 bg_blue">투자진행</button>
+          </div>
+
+          <div class="event_box">
+            <a href="#" class="inbox">
+              <i class="ico"><img src="../images/ico_event.svg" alt=""></i>
+              <em class="tit">이벤트</em>
+              <span class="txt">300만원 투자시, 상품권 10만원 증정!</span>
+            </a>
+            <button type="button" class="btn_close"></button>
+          </div>
+
         </div>
+        <!--// gray -->
       </div>
     </div>
     <!--// container -->

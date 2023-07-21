@@ -1,719 +1,720 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <title>루트에너지</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes" />
-    <meta name="format-detection" content="telephone=no" />
 
-    <link type="text/css" rel="stylesheet" href="../js/swiper/swiper-bundle.min.css" />
-    <link type="text/css" rel="stylesheet" href="../js/nice-select/nice-select.css" />
-    <link type="text/css" rel="stylesheet" href="../css/style.css" />
+<head>
+  <title>루트에너지</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes" />
+  <meta name="format-detection" content="telephone=no" />
 
-    <script src="../js/jquery-3.7.0.min.js"></script>
-    <script src="../js/swiper/swiper-bundle.min.js"></script>
-    <script src="../js/nice-select/jquery.nice-select.min.js"></script>
-    <script>
-      $(function () {
-        $("select").niceSelect();
-      });
-    </script>
-    <script src="../js/design.js"></script>
-  </head>
+  <link type="text/css" rel="stylesheet" href="../js/swiper/swiper-bundle.min.css" />
+  <link type="text/css" rel="stylesheet" href="../js/nice-select/nice-select.css" />
+  <link type="text/css" rel="stylesheet" href="../css/style.css" />
 
-  <body>
-    <div id="wrap" class="bg">
-      <!-- header -->
-      <header id="header">
-        <div class="head_con main">
-          <a href="#" class="btn_my"></a>
-          <h1 class="logo"><a href="#">ROOTENERGY</a></h1>
-          <button type="button" class="btn_menu" onclick="toggleMenu()"></button>
-          <!-- menu -->
-          <div class="menu_wrap">
-            <div class="menu_mask" onclick="toggleMenu()"></div>
-            <div class="menu_cont">
-              <div class="menu_head">
-                <p class="txt_welcome">환영합니다! <br />홍길동님</p>
-                <div class="user_type">
-                  <span class="tip">상향신청</span>
-                  <span class="txt">개인<br />투자자</span>
-                </div>
-              </div>
-              <div class="menu_info">
-                <!-- 로그인전 -->
-                <ul class="loginjoin">
-                  <li><a href="#">로그인</a></li>
-                  <li>
-                    <a href="#"
-                      >회원가입
-                      <p class="tip">지속가능한 친환경 투자 시작하기</p></a
-                    >
-                  </li>
-                </ul>
-                <!--// 로그인전 -->
-                <ul class="menu_main">
-                  <li>
-                    <a href="#">
-                      <div class="ico" style="background-image: url(../images/ico_menu_main01.svg)"></div>
-                      <span class="txt">투자현황</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="ico" style="background-image: url(../images/ico_menu_main02.svg)"></div>
-                      <span class="txt">마이페이지</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="ico" style="background-image: url(../images/ico_menu_main03.svg)"></div>
-                      <span class="txt">프로모션</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="menu_list">
-                <ul class="menu">
-                  <li>
-                    <a href="#">
-                      <i class="ico" style="background-image: url(../images/ico_menu_list01.svg)"></i>
-                      <span>투자</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="ico" style="background-image: url(../images/ico_menu_list02.svg)"></i>
-                      <span>대출</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="ico" style="background-image: url(../images/ico_menu_list03.svg)"></i>
-                      <span>법인투자안내</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="ico" style="background-image: url(../images/ico_menu_list04.svg)"></i>
-                      <span>고객센터</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="ico" style="background-image: url(../images/ico_menu_list05.svg)"></i>
-                      <span>원리금수취권 거래소</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="ico" style="background-image: url(../images/ico_menu_list06.svg)"></i>
-                      <span>이웃신청 현황</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="ico" style="background-image: url(../images/ico_menu_list07.svg)"></i>
-                      <span>회사소개</span>
-                    </a>
-                  </li>
-                </ul>
+  <script src="../js/jquery-3.7.0.min.js"></script>
+  <script src="../js/swiper/swiper-bundle.min.js"></script>
+  <script src="../js/nice-select/jquery.nice-select.min.js"></script>
+  <script>
+    $(function () {
+      $("select").niceSelect();
+    });
+  </script>
+  <script src="../js/design.js"></script>
+</head>
+
+<body>
+  <div id="wrap" class="bg">
+    <!-- header -->
+    <header id="header">
+      <div class="head_con main">
+        <a href="#" class="btn_my"></a>
+        <h1 class="logo"><a href="#">ROOTENERGY</a></h1>
+        <button type="button" class="btn_menu" onclick="toggleMenu()"></button>
+        <!-- menu -->
+        <div class="menu_wrap">
+          <div class="menu_mask" onclick="toggleMenu()"></div>
+          <div class="menu_cont">
+            <div class="menu_head">
+              <p class="txt_welcome">환영합니다! <br />홍길동님</p>
+              <div class="user_type">
+                <span class="tip">상향신청</span>
+                <span class="txt">개인<br />투자자</span>
               </div>
             </div>
+            <div class="menu_info">
+              <!-- 로그인전 -->
+              <ul class="loginjoin">
+                <li><a href="#">로그인</a></li>
+                <li>
+                  <a href="#">
+                    회원가입
+                    <p class="tip">지속가능한 친환경 투자 시작하기</p>
+                  </a>
+                </li>
+              </ul>
+              <!--// 로그인전 -->
+              <ul class="menu_main">
+                <li>
+                  <a href="#">
+                    <div class="ico" style="background-image: url(../images/ico_menu_main01.svg)"></div>
+                    <span class="txt">투자현황</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="ico" style="background-image: url(../images/ico_menu_main02.svg)"></div>
+                    <span class="txt">마이페이지</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="ico" style="background-image: url(../images/ico_menu_main03.svg)"></div>
+                    <span class="txt">프로모션</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="menu_list">
+              <ul class="menu">
+                <li>
+                  <a href="#">
+                    <i class="ico" style="background-image: url(../images/ico_menu_list01.svg)"></i>
+                    <span>투자</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="ico" style="background-image: url(../images/ico_menu_list02.svg)"></i>
+                    <span>대출</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="ico" style="background-image: url(../images/ico_menu_list03.svg)"></i>
+                    <span>법인투자안내</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="ico" style="background-image: url(../images/ico_menu_list04.svg)"></i>
+                    <span>고객센터</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="ico" style="background-image: url(../images/ico_menu_list05.svg)"></i>
+                    <span>원리금수취권 거래소</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="ico" style="background-image: url(../images/ico_menu_list06.svg)"></i>
+                    <span>이웃신청 현황</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="ico" style="background-image: url(../images/ico_menu_list07.svg)"></i>
+                    <span>회사소개</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <!--// menu -->
         </div>
-        <nav class="gnb_box">
-          <ul class="gnb">
-            <li class="active">
-              <a href="#"><span>투자하기</span></a>
-            </li>
-            <li>
-              <a href="#"><span>법인투자</span></a>
-            </li>
-            <li>
-              <a href="#"><span>고객센터</span></a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <!--// header -->
+        <!--// menu -->
+      </div>
+      <nav class="gnb_box">
+        <ul class="gnb">
+          <li class="active">
+            <a href="#"><span>투자하기</span></a>
+          </li>
+          <li>
+            <a href="#"><span>법인투자</span></a>
+          </li>
+          <li>
+            <a href="#"><span>고객센터</span></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--// header -->
 
-      <!-- container -->
-      <div id="container">
-        <!-- Banner Popup -->
-        <a href="#" class="ma_bn_pop"><img src="../images/ma_bannerlink01.png" alt="" /></a>
-        <!--// Banner Popup -->
+    <!-- container -->
+    <div id="container">
+      <!-- Banner Popup -->
+      <a href="#" class="ma_bn_pop"><img src="../images/ma_bannerlink01.png" alt="" /></a>
+      <!--// Banner Popup -->
 
-        <!-- Main Banner -->
-        <div class="ma_bn_swiper">
-          <ul class="swiper-wrapper">
-            <li class="swiper-slide">
-              <div class="inbox">
-                <div class="cont">
-                  <div class="product_box">
-                    <div class="tag_box">
-                      <span class="tag">#단기</span>
-                      <span class="tag">#태양광</span>
-                    </div>
-                    <div class="tit_img_flex">
-                      <p class="tit">고흥군 대서 발전소 6호</p>
-                      <div class="img" style="background-image: url(../images/ma_banner01.png)"></div>
-                    </div>
+      <!-- Main Banner -->
+      <div class="ma_bn_swiper">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide">
+            <div class="inbox">
+              <div class="cont">
+                <div class="product_box">
+                  <div class="tag_box">
+                    <span class="tag">#단기</span>
+                    <span class="tag">#태양광</span>
                   </div>
-                  <div class="progress_group">
-                    <div class="txt_info">
-                      <p>
-                        연
-                        <em>12.5</em>
-                        <span>%</span>
-                      </p>
-                      <p>
-                        <em>6</em>
-                        개월
-                      </p>
-                    </div>
-                    <div class="progress_bar">
-                      <!-- 진행율 있을시 -->
-                      <div class="val" style="width: 63%"></div>
-                      <div class="bg"></div>
-                      <!--// 진행율 있을시 -->
-                    </div>
-                    <div class="progress_info">
-                      <p class="total">
-                        <em>3억 1,775만원</em>
-                        / 3억 8,000만원
-                      </p>
-                      <p class="pct">65%</p>
-                    </div>
+                  <div class="tit_img_flex">
+                    <p class="tit">고흥군 대서 발전소 6호</p>
+                    <div class="img" style="background-image: url(../images/ma_banner01.png)"></div>
                   </div>
                 </div>
-                <a href="#" class="btn_go">상품 보러가기</a>
-              </div>
-            </li>
-            <li class="swiper-slide">
-              <div class="inbox">
-                <div class="cont" style="background-image: url(../images/ma_banner02.png)">
-                  <div class="tit_box">
-                    <p class="tit">
-                      300만원 투자시, <br />
-                      상품권 10만원 증정!
+                <div class="progress_group">
+                  <div class="txt_info">
+                    <p>
+                      연
+                      <em>12.5</em>
+                      <span>%</span>
                     </p>
-                    <p class="tit_p">첫 투자자를 위한 특별한 지원!</p>
-                  </div>
-                </div>
-                <a href="#" class="btn_go">프로모션 보러가기</a>
-              </div>
-            </li>
-            <li class="swiper-slide">
-              <div class="inbox">
-                <div class="cont" style="background-image: url(../images/ma_banner03.png)">
-                  <div class="tit_box">
-                    <p class="tit">
-                      매주 월요일, <br />
-                      루트레터를 받아보세요
+                    <p>
+                      <em>6</em>
+                      개월
                     </p>
-                    <p class="tit_p">다양한 환경뉴스를 전해드려요!</p>
                   </div>
-                  <a href="#" class="view_past">지난 회차 보기</a>
-                </div>
-                <a href="#" class="btn_go bg_purple">무료 구독하기</a>
-              </div>
-            </li>
-            <li class="swiper-slide">
-              <div class="inbox">
-                <div class="cont" style="background-image: url(../images/ma_banner04.png)">
-                  <div class="tit_box">
-                    <p class="tit">
-                      녹색 금융, <br />
-                      법인투자자와 함께 합니다
+                  <div class="progress_bar">
+                    <!-- 진행율 있을시 -->
+                    <div class="val" style="width: 63%"></div>
+                    <!--// 진행율 있을시 -->
+                  </div>
+                  <div class="progress_info">
+                    <p class="total">
+                      <em>3억 1,775만원</em>
+                      / 3억 8,000만원
                     </p>
-                    <p class="tit_p">가입부터 투자까지 1:1 상담 진행</p>
+                    <p class="pct">65%</p>
                   </div>
                 </div>
-                <a href="#" class="btn_go bg_black">상담 신청하기</a>
               </div>
-            </li>
-          </ul>
-          <div class="swiper-pagination"></div>
-        </div>
-        <script>
-          $(function () {
-            var maBannerSwiper = new Swiper(".ma_bn_swiper", {
-              slidesPerView: "auto",
-              spaceBetween: 16,
-              observer: true,
-              observeParents: true,
-              // loop: true,
-              // autoplay: {
-              //   delay: 3000,
-              //   disableOnInteraction: false,
-              // },
-              pagination: {
-                el: ".ma_bn_swiper .swiper-pagination",
-              },
-            });
+              <a href="#" class="btn_go">상품 보러가기</a>
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div class="inbox">
+              <div class="cont" style="background-image: url(../images/ma_banner02.png)">
+                <div class="tit_box">
+                  <p class="tit">
+                    300만원 투자시, <br />
+                    상품권 10만원 증정!
+                  </p>
+                  <p class="tit_p">첫 투자자를 위한 특별한 지원!</p>
+                </div>
+              </div>
+              <a href="#" class="btn_go">프로모션 보러가기</a>
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div class="inbox">
+              <div class="cont" style="background-image: url(../images/ma_banner03.png)">
+                <div class="tit_box">
+                  <p class="tit">
+                    매주 월요일, <br />
+                    루트레터를 받아보세요
+                  </p>
+                  <p class="tit_p">다양한 환경뉴스를 전해드려요!</p>
+                </div>
+                <a href="#" class="view_past">지난 회차 보기</a>
+              </div>
+              <a href="#" class="btn_go bg_purple">무료 구독하기</a>
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div class="inbox">
+              <div class="cont" style="background-image: url(../images/ma_banner04.png)">
+                <div class="tit_box">
+                  <p class="tit">
+                    녹색 금융, <br />
+                    법인투자자와 함께 합니다
+                  </p>
+                  <p class="tit_p">가입부터 투자까지 1:1 상담 진행</p>
+                </div>
+              </div>
+              <a href="#" class="btn_go bg_black">상담 신청하기</a>
+            </div>
+          </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+      </div>
+      <script>
+        $(function () {
+          var maBannerSwiper = new Swiper(".ma_bn_swiper", {
+            slidesPerView: "auto",
+            spaceBetween: 16,
+            observer: true,
+            observeParents: true,
+            // loop: true,
+            // autoplay: {
+            //   delay: 3000,
+            //   disableOnInteraction: false,
+            // },
+            pagination: {
+              el: ".ma_bn_swiper .swiper-pagination",
+            },
           });
-        </script>
-        <!--// Main Banner -->
+        });
+      </script>
+      <!--// Main Banner -->
 
-        <!-- 환경과함께 -->
-        <div class="title_box">
-          <h3 class="title">
-            환경과 함께,<br />
-            믿을 수 있는 투자처
-          </h3>
-          <p class="s_txt">*2023년 5월 기준</p>
-        </div>
-        <div class="ma_environment">
-          <ul class="datalist">
-            <li>
-              <div class="inbox">
-                <i class="ico" style="background-image: url(../images/ma_ico_environment01.svg)"></i>
-                <p class="tit">누적 대출액</p>
-                <div class="con">
-                  <p class="txt">508억원</p>
-                  <p class="cnt">▲ 292</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="inbox">
-                <i class="ico" style="background-image: url(../images/ma_ico_environment02.svg)"></i>
-                <p class="tit">누적 투자 건수</p>
-                <div class="con">
-                  <p class="txt">8,715건</p>
-                  <p class="cnt">▲ 292</p>
-                </div>
-              </div>
-            </li>
-          </ul>
-          <div class="databox">
-            <div class="leftbox">
-              <p class="tit">생산 발전량</p>
+      <!-- 환경과함께 -->
+      <div class="title_box">
+        <h3 class="title">
+          환경과 함께,<br />
+          믿을 수 있는 투자처
+        </h3>
+        <p class="s_txt">*2023년 5월 기준</p>
+      </div>
+      <div class="ma_environment">
+        <ul class="datalist">
+          <li>
+            <div class="inbox">
+              <i class="ico" style="background-image: url(../images/ma_ico_environment01.svg)"></i>
+              <p class="tit">누적 대출액</p>
               <div class="con">
-                <p class="txt">250만</p>
+                <p class="txt">508억원</p>
                 <p class="cnt">▲ 292</p>
               </div>
             </div>
-            <p class="rightbox">
-              대기오염 <em>75,907</em> 감축 <br />
-              <em>약 399그루🌲</em> <br />
-              이산화탄소 절감
-            </p>
+          </li>
+          <li>
+            <div class="inbox">
+              <i class="ico" style="background-image: url(../images/ma_ico_environment02.svg)"></i>
+              <p class="tit">누적 투자 건수</p>
+              <div class="con">
+                <p class="txt">8,715건</p>
+                <p class="cnt">▲ 292</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="databox">
+          <div class="leftbox">
+            <p class="tit">생산 발전량</p>
+            <div class="con">
+              <p class="txt">250만</p>
+              <p class="cnt">▲ 292</p>
+            </div>
           </div>
+          <p class="rightbox">
+            대기오염 <em>75,907</em> 감축 <br />
+            <em>약 399그루🌲</em> <br />
+            이산화탄소 절감
+          </p>
         </div>
-        <!--// 환경과함께 -->
+      </div>
+      <!--// 환경과함께 -->
 
-        <!-- Review -->
-        <div class="title_box">
-          <h3 class="title">투자자 후기</h3>
-        </div>
-        <div class="ma_review_swiper">
+      <!-- Review -->
+      <div class="title_box">
+        <h3 class="title">투자자 후기</h3>
+      </div>
+      <div class="ma_review_swiper">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide">
+            <div class="inbox">
+              <div class="userbox bg_skyblue">기후</div>
+              <div class="txtbox">
+                <p class="tit">
+                  <span class="ellipsis">
+                    루트에너지로 쏠쏠하게 <br />
+                    용돈 벌었어요! 너무 좋아요!
+                  </span>
+                </p>
+                <p class="txt">
+                  <span class="ellipsis">
+                    목돈을 어떻게 해야할지 <br />
+                    고민이 많았는데 루트에 투자한덕에 <br />
+                    용돈벌이 쏠쏠하게 했습니다^^
+                  </span>
+                </p>
+                <p class="info_name">
+                  <span class="info">3/4회차 이자 지급</span>
+                  <span class="name">fly** 님</span>
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div class="inbox">
+              <div class="userbox bg_mint">커뮤</div>
+              <div class="txtbox">
+                <p class="tit">
+                  <span class="ellipsis">
+                    지역과 상생하는 투자라는 점에서 <br />
+                    더욱 의미가 깊은 것 같아요
+                  </span>
+                </p>
+                <p class="txt">
+                  <span class="ellipsis">
+                    법인 투자로 제법 많은 <br />
+                    수익을 보았습니다
+                  </span>
+                </p>
+                <p class="info_name">
+                  <span class="info">3/4회차 이자 지급</span>
+                  <span class="name">fly** 님</span>
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div class="inbox">
+              <div class="userbox bg_gray">기후</div>
+              <div class="txtbox">
+                <p class="tit">
+                  <span class="ellipsis">
+                    법인 투자로 제법 많은 <br />
+                    수익을 보았습니다
+                  </span>
+                </p>
+                <p class="txt">
+                  <span class="ellipsis">
+                    법인 투자처를 찾다가 주변 추천으로 <br />
+                    투자해보았는데 만족스럽습니다. <br />
+                    감사합니다
+                  </span>
+                </p>
+                <p class="info_name">
+                  <span class="info">3/4회차 이자 지급</span>
+                  <span class="name">fly** 님</span>
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+      </div>
+      <script>
+        $(function () {
+          var maReviewSwiper = new Swiper(".ma_review_swiper", {
+            slidesPerView: 1.13,
+            spaceBetween: 16,
+            observer: true,
+            observeParents: true,
+            // loop: true,
+            // autoplay: {
+            //   delay: 3000,
+            //   disableOnInteraction: false,
+            // },
+            pagination: {
+              el: ".ma_review_swiper .swiper-pagination",
+            },
+          });
+        });
+      </script>
+      <!--// Review -->
+
+      <!-- 펀드소개 -->
+      <div class="title_box">
+        <h3 class="title">
+          펀드가 처음이라면?<br />
+          부담없이 시작하세요
+        </h3>
+      </div>
+      <div class="ma_intro_box">
+        <ul class="ma_intro">
+          <li>
+            <a href="#" class="inbox">
+              <i class="ico" style="background-image: url(../images/ma_ico_intro01.svg)"></i>
+              <p class="txt"><em>최소 1만원</em>부터 <br />투자 가능</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="inbox">
+              <i class="ico" style="background-image: url(../images/ma_ico_intro02.svg)"></i>
+              <p class="txt"><em>빠르고 간편</em>한 <br />회원가입</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="inbox">
+              <i class="ico" style="background-image: url(../images/ma_ico_intro03.svg)"></i>
+              <p class="txt">눈속임 없는 <br /><em>세후 수익률</em></p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="inbox">
+              <i class="ico" style="background-image: url(../images/ma_ico_intro04.svg)"></i>
+              <p class="txt"><em>분기별 이자</em>로 <br />쏠쏠한 용돈</p>
+            </a>
+          </li>
+        </ul>
+        <a href="#" class="ma_bn_kakao"><img src="../images/ma_bannerkakao01.png" alt="" /></a>
+      </div>
+      <!-- 펀드소개 -->
+
+      <!-- 최신뉴스 -->
+      <div class="title_box">
+        <h3 class="title">최신뉴스</h3>
+        <a href="#" class="more">전체보기</a>
+      </div>
+      <div class="ma_latest_news">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide">
+            <a href="#" class="inbox">
+              <div class="imgbox"><img src="../images/ma_latest01.png" alt="" /></div>
+              <div class="txtbox">
+                <p class="tit">“ 트와이스 . ITZY도 재생에너지 써요” 업무협약 체결</p>
+                <div class="source_date">
+                  <span class="source">머니투데이</span>
+                  <span class="date">2022-06-17</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="#" class="inbox">
+              <div class="imgbox"><img src="../images/ma_latest02.png" alt="" /></div>
+              <div class="txtbox">
+                <p class="tit">루트에너지, 소셜벤처의 산실 '메리히어'</p>
+                <div class="source_date">
+                  <span class="source">국토일보</span>
+                  <span class="date">2022-06-17</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="#" class="inbox">
+              <div class="imgbox"><img src="../images/ma_latest01.png" alt="" /></div>
+              <div class="txtbox">
+                <p class="tit">“ 트와이스 . ITZY도 재생에너지 써요” 업무협약 체결</p>
+                <div class="source_date">
+                  <span class="source">머니투데이</span>
+                  <span class="date">2022-06-17</span>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+      </div>
+      <script>
+        $(function () {
+          var maReviewSwiper = new Swiper(".ma_latest_news", {
+            slidesPerView: 1.13,
+            spaceBetween: 16,
+            observer: true,
+            observeParents: true,
+            // loop: true,
+            // autoplay: {
+            //   delay: 3000,
+            //   disableOnInteraction: false,
+            // },
+            pagination: {
+              el: ".ma_latest_news .swiper-pagination",
+            },
+          });
+        });
+      </script>
+      <!--// 최신뉴스 -->
+
+      <!-- 루트소식 -->
+      <div class="title_box">
+        <h3 class="title">루트소식</h3>
+      </div>
+      <div class="ma_rootnews_box">
+        <ul class="ma_rootnews">
+          <li>
+            <a href="#" class="inbox">
+              <span class="cate">채용</span>
+              <p class="tit">기획/실무 파트 채용 중</p>
+              <i class="ico" style="background-image: url(../images/ico_rootnews01.svg)"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="inbox">
+              <span class="cate">회사소개</span>
+              <p class="tit">More for future 저탄소 사회를 위해</p>
+              <i class="ico" style="background-image: url(../images/ico_rootnews02.svg)"></i>
+            </a>
+          </li>
+        </ul>
+        <!-- 이미지배너 swiper -->
+        <div class="ma_imgbn_swiper">
           <ul class="swiper-wrapper">
             <li class="swiper-slide">
-              <div class="inbox">
-                <div class="userbox bg_skyblue">기후</div>
-                <div class="txtbox">
-                  <p class="tit">
-                    <span class="ellipsis">
-                      루트에너지로 쏠쏠하게 <br />
-                      용돈 벌었어요! 너무 좋아요!
-                    </span>
-                  </p>
-                  <p class="txt">
-                    <span class="ellipsis">
-                      목돈을 어떻게 해야할지 <br />
-                      고민이 많았는데 루트에 투자한덕에 <br />
-                      용돈벌이 쏠쏠하게 했습니다^^
-                    </span>
-                  </p>
-                  <p class="info_name">
-                    <span class="info">3/4회차 이자 지급</span>
-                    <span class="name">fly** 님</span>
-                  </p>
-                </div>
-              </div>
+              <a href="#" class="inbox"><img src="../images/ma_imgbanner01.png" alt="" /></a>
             </li>
             <li class="swiper-slide">
-              <div class="inbox">
-                <div class="userbox bg_mint">커뮤</div>
-                <div class="txtbox">
-                  <p class="tit">
-                    <span class="ellipsis">
-                      지역과 상생하는 투자라는 점에서 <br />
-                      더욱 의미가 깊은 것 같아요
-                    </span>
-                  </p>
-                  <p class="txt">
-                    <span class="ellipsis">
-                      법인 투자로 제법 많은 <br />
-                      수익을 보았습니다
-                    </span>
-                  </p>
-                  <p class="info_name">
-                    <span class="info">3/4회차 이자 지급</span>
-                    <span class="name">fly** 님</span>
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li class="swiper-slide">
-              <div class="inbox">
-                <div class="userbox bg_gray">기후</div>
-                <div class="txtbox">
-                  <p class="tit">
-                    <span class="ellipsis">
-                      법인 투자로 제법 많은 <br />
-                      수익을 보았습니다
-                    </span>
-                  </p>
-                  <p class="txt">
-                    <span class="ellipsis">
-                      법인 투자처를 찾다가 주변 추천으로 <br />
-                      투자해보았는데 만족스럽습니다. <br />
-                      감사합니다
-                    </span>
-                  </p>
-                  <p class="info_name">
-                    <span class="info">3/4회차 이자 지급</span>
-                    <span class="name">fly** 님</span>
-                  </p>
-                </div>
-              </div>
+              <a href="#" class="inbox"><img src="../images/ma_imgbanner02.png" alt="" /></a>
             </li>
           </ul>
           <div class="swiper-pagination"></div>
         </div>
         <script>
           $(function () {
-            var maReviewSwiper = new Swiper(".ma_review_swiper", {
-              slidesPerView: 1.13,
-              spaceBetween: 16,
+            var maImgBnSwiper = new Swiper(".ma_imgbn_swiper", {
+              effect: "fade",
+              // fadeEffect: {
+              //   crossFade: true,
+              // },
               observer: true,
               observeParents: true,
-              // loop: true,
-              // autoplay: {
-              //   delay: 3000,
-              //   disableOnInteraction: false,
-              // },
+              loop: true,
+              autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+              },
               pagination: {
-                el: ".ma_review_swiper .swiper-pagination",
+                el: ".ma_imgbn_swiper .swiper-pagination",
               },
             });
           });
         </script>
-        <!--// Review -->
+        <!--// 이미지배너 swiper -->
+      </div>
+      <!--// 루트소식 -->
 
-        <!-- 펀드소개 -->
-        <div class="title_box">
-          <h3 class="title">
-            펀드가 처음이라면?<br />
-            부담없이 시작하세요
-          </h3>
-        </div>
-        <div class="ma_intro_box">
-          <ul class="ma_intro">
-            <li>
-              <a href="#" class="inbox">
-                <i class="ico" style="background-image: url(../images/ma_ico_intro01.svg)"></i>
-                <p class="txt"><em>최소 1만원</em>부터 <br />투자 가능</p>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="inbox">
-                <i class="ico" style="background-image: url(../images/ma_ico_intro02.svg)"></i>
-                <p class="txt"><em>빠르고 간편</em>한 <br />회원가입</p>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="inbox">
-                <i class="ico" style="background-image: url(../images/ma_ico_intro03.svg)"></i>
-                <p class="txt">눈속임 없는 <br /><em>세후 수익률</em></p>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="inbox">
-                <i class="ico" style="background-image: url(../images/ma_ico_intro04.svg)"></i>
-                <p class="txt"><em>분기별 이자</em>로 <br />쏠쏠한 용돈</p>
-              </a>
-            </li>
-          </ul>
-          <a href="#" class="ma_bn_kakao"><img src="../images/ma_bannerkakao01.png" alt="" /></a>
-        </div>
-        <!-- 펀드소개 -->
-
-        <!-- 최신뉴스 -->
-        <div class="title_box">
-          <h3 class="title">최신뉴스</h3>
+      <!-- 자주묻는질문 -->
+      <div class="ma_white_box">
+        <div class="in_head">
+          <i class="ico" style="background-image: url(../images/ico_whitebox_faq.svg)"></i>
+          <h3 class="title">자주묻는질문</h3>
           <a href="#" class="more">전체보기</a>
         </div>
-        <div class="ma_latest_news">
-          <ul class="swiper-wrapper">
-            <li class="swiper-slide">
-              <a href="#" class="inbox">
-                <div class="imgbox"><img src="../images/ma_latest01.png" alt="" /></div>
-                <div class="txtbox">
-                  <p class="tit">“ 트와이스 . ITZY도 재생에너지 써요” 업무협약 체결</p>
-                  <div class="source_date">
-                    <span class="source">머니투데이</span>
-                    <span class="date">2022-06-17</span>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="swiper-slide">
-              <a href="#" class="inbox">
-                <div class="imgbox"><img src="../images/ma_latest02.png" alt="" /></div>
-                <div class="txtbox">
-                  <p class="tit">루트에너지, 소셜벤처의 산실 '메리히어'</p>
-                  <div class="source_date">
-                    <span class="source">국토일보</span>
-                    <span class="date">2022-06-17</span>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="swiper-slide">
-              <a href="#" class="inbox">
-                <div class="imgbox"><img src="../images/ma_latest01.png" alt="" /></div>
-                <div class="txtbox">
-                  <p class="tit">“ 트와이스 . ITZY도 재생에너지 써요” 업무협약 체결</p>
-                  <div class="source_date">
-                    <span class="source">머니투데이</span>
-                    <span class="date">2022-06-17</span>
-                  </div>
-                </div>
-              </a>
-            </li>
-          </ul>
-          <div class="swiper-pagination"></div>
-        </div>
-        <script>
-          $(function () {
-            var maReviewSwiper = new Swiper(".ma_latest_news", {
-              slidesPerView: 1.13,
-              spaceBetween: 16,
-              observer: true,
-              observeParents: true,
-              // loop: true,
-              // autoplay: {
-              //   delay: 3000,
-              //   disableOnInteraction: false,
-              // },
-              pagination: {
-                el: ".ma_latest_news .swiper-pagination",
-              },
-            });
-          });
-        </script>
-        <!--// 최신뉴스 -->
-
-        <!-- 루트소식 -->
-        <div class="title_box">
-          <h3 class="title">루트소식</h3>
-        </div>
-        <div class="ma_rootnews_box">
-          <ul class="ma_rootnews">
+        <div class="in_cont">
+          <ul class="ma_faq">
             <li>
-              <a href="#" class="inbox">
-                <span class="cate">채용</span>
-                <p class="tit">기획/실무 파트 채용 중</p>
-                <i class="ico" style="background-image: url(../images/ico_rootnews01.svg)"></i>
-              </a>
+              <div class="titbox">
+                <i class="ico">Q</i>
+                <p class="tit">투자상품 수익률과 투자기간은 어떻게 어떻게 되나요?</p>
+              </div>
+              <div class="conbox">
+                <p class="con">답변 내용입니다. 답변 내용입니다. 답변 내용입니다. 답변 내용입니다. 답변 내용입니다. 답변 내용입니다. 답변 내용입니다. 답변 내용입니다. 답변 내용입니다. 답변 내용입니다. 답변 내용입니다.</p>
+              </div>
             </li>
             <li>
-              <a href="#" class="inbox">
-                <span class="cate">회사소개</span>
-                <p class="tit">More for future 저탄소 사회를 위해</p>
-                <i class="ico" style="background-image: url(../images/ico_rootnews02.svg)"></i>
-              </a>
+              <div class="titbox">
+                <i class="ico">Q</i>
+                <p class="tit">투자금 중도회수가 가능한가요?</p>
+              </div>
+              <div class="conbox">
+                <p class="con">답변 내용입니다.</p>
+              </div>
+            </li>
+            <li>
+              <div class="titbox">
+                <i class="ico">Q</i>
+                <p class="tit">원금이 보장되나요?</p>
+              </div>
+              <div class="conbox">
+                <p class="con">
+                  답변 내용입니다. <br />
+                  답변 내용입니다.
+                </p>
+              </div>
             </li>
           </ul>
-          <!-- 이미지배너 swiper -->
-          <div class="ma_imgbn_swiper">
-            <ul class="swiper-wrapper">
-              <li class="swiper-slide">
-                <a href="#" class="inbox"><img src="../images/ma_imgbanner01.png" alt="" /></a>
-              </li>
-              <li class="swiper-slide">
-                <a href="#" class="inbox"><img src="../images/ma_imgbanner02.png" alt="" /></a>
-              </li>
-            </ul>
-            <div class="swiper-pagination"></div>
-          </div>
           <script>
             $(function () {
-              var maImgBnSwiper = new Swiper(".ma_imgbn_swiper", {
-                effect: "fade",
-                // fadeEffect: {
-                //   crossFade: true,
-                // },
-                observer: true,
-                observeParents: true,
-                loop: true,
-                autoplay: {
-                  delay: 3000,
-                  disableOnInteraction: false,
-                },
-                pagination: {
-                  el: ".ma_imgbn_swiper .swiper-pagination",
-                },
+              $(".ma_faq .titbox").on("click", function () {
+                $(this).toggleClass("on").next(".conbox").slideToggle("fast");
               });
             });
           </script>
-          <!--// 이미지배너 swiper -->
         </div>
-        <!--// 루트소식 -->
-
-        <!-- 자주묻는질문 -->
-        <div class="ma_white_box">
-          <div class="in_head">
-            <i class="ico" style="background-image: url(../images/ico_whitebox_faq.svg)"></i>
-            <h3 class="title">자주묻는질문</h3>
-            <a href="#" class="more">전체보기</a>
-          </div>
-          <div class="in_cont">
-            <ul class="ma_faq">
-              <li>
-                <div class="titbox">
-                  <i class="ico">Q</i>
-                  <p class="tit">투자상품 수익률과 투자기간은 어떻게 어떻게 되나요?</p>
-                </div>
-                <div class="conbox">
-                  <p class="con">답변 내용입니다. 답변 내용입니다. 답변 내용입니다. 답변 내용입니다. 답변 내용입니다. 답변 내용입니다. 답변 내용입니다. 답변 내용입니다. 답변 내용입니다. 답변 내용입니다. 답변 내용입니다.</p>
-                </div>
-              </li>
-              <li>
-                <div class="titbox">
-                  <i class="ico">Q</i>
-                  <p class="tit">투자금 중도회수가 가능한가요?</p>
-                </div>
-                <div class="conbox">
-                  <p class="con">답변 내용입니다.</p>
-                </div>
-              </li>
-              <li>
-                <div class="titbox">
-                  <i class="ico">Q</i>
-                  <p class="tit">원금이 보장되나요?</p>
-                </div>
-                <div class="conbox">
-                  <p class="con">
-                    답변 내용입니다. <br />
-                    답변 내용입니다.
-                  </p>
-                </div>
-              </li>
-            </ul>
-            <script>
-              $(function () {
-                $(".ma_faq .titbox").on("click", function () {
-                  $(this).toggleClass("on").next(".conbox").slideToggle("fast");
-                });
-              });
-            </script>
-          </div>
-        </div>
-        <!--// 자주묻는질문 -->
-
-        <!-- 공지사항 -->
-        <div class="ma_white_box">
-          <div class="in_head">
-            <i class="ico" style="background-image: url(../images/ico_whitebox_notice.svg)"></i>
-            <h3 class="title">공지사항</h3>
-            <a href="#" class="more">전체보기</a>
-          </div>
-          <div class="in_cont">
-            <ul class="ma_notice">
-              <li>
-                <a href="#" class="inbox">
-                  <p class="tit">시스템 정기 점검 안내 (3/9)</p>
-                  <span class="date">2023.02.14</span>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="inbox">
-                  <p class="tit">신규가입 대상자 다드림 이벤트</p>
-                  <span class="date">2023.02.14</span>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="inbox">
-                  <p class="tit">시스템 정기 점검 안내 (3/9)</p>
-                  <span class="date">2023.02.14</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <!--// 공지사항 -->
-
-        <!-- 공시지표 -->
-        <div class="ma_white_box">
-          <div class="in_head">
-            <i class="ico" style="background-image: url(../images/ico_whitebox_graph.svg)"></i>
-            <h3 class="title">공시지표</h3>
-            <p class="desc">*2023년 5월 기준</p>
-          </div>
-          <div class="ma_indicator">
-            <div class="itembox">
-              <dl>
-                <dt>누적대출액</dt>
-                <dd>51,908,760,000원</dd>
-              </dl>
-              <p class="pct"><span class="tit">상환율</span><span class="cnt">83.19%</span></p>
-            </div>
-            <div class="itembox">
-              <dl>
-                <dt>대출잔액</dt>
-                <dd>8,636,835,098원</dd>
-              </dl>
-              <p class="pct"><span class="tit">연체율</span><span class="cnt">18.06%</span></p>
-            </div>
-          </div>
-        </div>
-        <!--// 공시지표 -->
       </div>
-      <!--// container -->
+      <!--// 자주묻는질문 -->
 
-      <!-- footer -->
-      <footer id="footer">
-        <dl class="foot_cs">
-          <dt>고객문의</dt>
-          <dd>
-            <a href="tel:027928934" class="tel">02.792.8934</a>
-            <p class="time">평일 09시~18시 (점심 12시~13시)</p>
-          </dd>
-        </dl>
-        <div class="foot_logo_sns">
-          <h2 class="foot_logo"><a href="#">ROOTENERGY</a></h2>
-          <ul class="foot_sns">
-            <li><a href="#" class="sns_youtube"></a></li>
-            <li><a href="#" class="sns_facebook"></a></li>
-            <li><a href="#" class="sns_blog"></a></li>
-            <li><a href="#" class="sns_talk"></a></li>
+      <!-- 공지사항 -->
+      <div class="ma_white_box">
+        <div class="in_head">
+          <i class="ico" style="background-image: url(../images/ico_whitebox_notice.svg)"></i>
+          <h3 class="title">공지사항</h3>
+          <a href="#" class="more">전체보기</a>
+        </div>
+        <div class="in_cont">
+          <ul class="ma_notice">
+            <li>
+              <a href="#" class="inbox">
+                <p class="tit">시스템 정기 점검 안내 (3/9)</p>
+                <span class="date">2023.02.14</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="inbox">
+                <p class="tit">신규가입 대상자 다드림 이벤트</p>
+                <span class="date">2023.02.14</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="inbox">
+                <p class="tit">시스템 정기 점검 안내 (3/9)</p>
+                <span class="date">2023.02.14</span>
+              </a>
+            </li>
           </ul>
         </div>
-        <div class="foot_con">
-          <ul class="foot_menu">
-            <li><a href="#">공지사항</a></li>
-            <li><a href="#">자주하는 질문</a></li>
-            <li><a href="#">채용</a></li>
-          </ul>
-          <div class="foot_link_box">
-            <ul class="foot_link">
-              <li><a href="#">서비스 이용약관</a></li>
-              <li><a href="#">전자금융거래약관</a></li>
-              <li><a href="#">개인정보처리방침</a></li>
-              <li><a href="#">신용정보 활용체계</a></li>
-              <li><a href="#">연계투자계약 약관</a></li>
-            </ul>
-            <div class="foot_certified"></div>
+      </div>
+      <!--// 공지사항 -->
+
+      <!-- 공시지표 -->
+      <div class="ma_white_box">
+        <div class="in_head">
+          <i class="ico" style="background-image: url(../images/ico_whitebox_graph.svg)"></i>
+          <h3 class="title">공시지표</h3>
+          <p class="desc">*2023년 5월 기준</p>
+        </div>
+        <div class="ma_indicator">
+          <div class="itembox">
+            <dl>
+              <dt>누적대출액</dt>
+              <dd>51,908,760,000원</dd>
+            </dl>
+            <p class="pct"><span class="tit">상환율</span><span class="cnt">83.19%</span></p>
+          </div>
+          <div class="itembox">
+            <dl>
+              <dt>대출잔액</dt>
+              <dd>8,636,835,098원</dd>
+            </dl>
+            <p class="pct"><span class="tit">연체율</span><span class="cnt">18.06%</span></p>
           </div>
         </div>
-      </footer>
-      <!--// footer -->
+      </div>
+      <!--// 공시지표 -->
     </div>
-  </body>
+    <!--// container -->
+
+    <!-- footer -->
+    <footer id="footer">
+      <dl class="foot_cs">
+        <dt>고객문의</dt>
+        <dd>
+          <a href="tel:027928934" class="tel">02.792.8934</a>
+          <p class="time">평일 09시~18시 (점심 12시~13시)</p>
+        </dd>
+      </dl>
+      <div class="foot_logo_sns">
+        <h2 class="foot_logo"><a href="#">ROOTENERGY</a></h2>
+        <ul class="foot_sns">
+          <li><a href="#" class="sns_youtube"></a></li>
+          <li><a href="#" class="sns_facebook"></a></li>
+          <li><a href="#" class="sns_blog"></a></li>
+          <li><a href="#" class="sns_talk"></a></li>
+        </ul>
+      </div>
+      <div class="foot_con">
+        <ul class="foot_menu">
+          <li><a href="#">공지사항</a></li>
+          <li><a href="#">자주하는 질문</a></li>
+          <li><a href="#">채용</a></li>
+        </ul>
+        <div class="foot_link_box">
+          <ul class="foot_link">
+            <li><a href="#">서비스 이용약관</a></li>
+            <li><a href="#">전자금융거래약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">신용정보 활용체계</a></li>
+            <li><a href="#">연계투자계약 약관</a></li>
+          </ul>
+          <div class="foot_certified"></div>
+        </div>
+      </div>
+    </footer>
+    <!--// footer -->
+  </div>
+</body>
+
 </html>

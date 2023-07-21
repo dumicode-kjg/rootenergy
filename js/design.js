@@ -23,6 +23,20 @@ function tabGo(index) {
   $(".tab_swiper a").removeClass("active").eq(index).addClass("active");
 }
 
+$(function () {
+  if ($(".sub_tab").length) {
+    $(".sub_tab a").on("click", function (e) {
+      e.preventDefault();
+
+      let index = $(".sub_tab a").index(this);
+
+      $(".sub_tab a").removeClass("active");
+      $(this).addClass("active");
+      $(".sub_tabcon").removeClass("active").eq(index).addClass("active");
+    });
+  }
+});
+
 /* wr */
 $(function () {
   $("input.text").each(function () {
@@ -60,3 +74,10 @@ $(function () {
 function toggleMenu() {
   $("body").toggleClass("openMenu");
 }
+
+/* togglebox */
+$(function () {
+  $(".detail_togglebox .in_title").on("click", function () {
+    $(this).toggleClass("on").next(".in_cont").slideToggle("fast");
+  });
+});

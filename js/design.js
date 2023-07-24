@@ -26,7 +26,7 @@ function tabGo(index) {
 $(function () {
   if ($(".sub_tab").length) {
     $(".sub_tab a").on("click", function (e) {
-      e.preventDefault();
+      //e.preventDefault();
 
       let index = $(".sub_tab a").index(this);
 
@@ -81,3 +81,13 @@ $(function () {
     $(this).toggleClass("on").next(".in_cont").slideToggle("fast");
   });
 });
+
+/* pop */
+function popOpen(divID) {
+  $(divID).show().css("display", "flex");
+  $('body').addClass('pop_open');
+}
+function popClose(divID) {
+  $(divID).hide();
+  $('body').removeClass('pop_open');
+}

@@ -245,5 +245,26 @@
       </div>
       <!--// container -->
     </div>
+    <!-- 팝업 -->
+    <div class="pop_container" id="pop1">
+      <div class="pop_mask" onclick="popClose('#pop1')"></div>
+      <div class="pop_wrapper">
+        <div class="pop_box">
+          <!-- 내용 -->
+          <h1 class="pop_title">예치금 출금</h1>
+          <p class="pop_msg">출금금액을 확인해주세요.</p>
+          <div class="btn_box mt24">
+            <button class="btn_style h48 bg_blue">확인</button>
+          </div>
+          <!--// 내용 -->
+        </div>
+      </div>
+    </div>
+    <script>
+      $(function(){
+        popOpen('#pop1');
+      })
+    </script>
+    <!--// 팝업 -->
   </body>
 </html>

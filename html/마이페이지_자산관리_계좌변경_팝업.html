@@ -142,10 +142,10 @@
           <a href="#" class="btn_style h24 bd_gray">입출금내역</a>
         </div>
         <ul class="sub_tab mt24">
-          <li><a href="javascript:;">투자금 입금</a></li>
-          <li><a href="javascript:;" class="active">투자금 출금</a></li>
+          <li><a href="javascript:;" class="active">투자금 입금</a></li>
+          <li><a href="javascript:;">투자금 출금</a></li>
         </ul>
-        <div class="sub_tabcon">
+        <div class="sub_tabcon active">
           <div class="my_mgmt">
             <div class="my_bank">
               <div class="imgbox"><img src="../images/img_my_rootenergy.png" alt="" /></div>
@@ -188,7 +188,7 @@
             </p>
           </div>
         </div>
-        <div class="sub_tabcon active">
+        <div class="sub_tabcon">
           <div class="my_mgmt">
             <div class="my_bank">
               <div class="imgbox"><img src="../images/img_my_rootenergy.png" alt="" /></div>
@@ -245,5 +245,59 @@
       </div>
       <!--// container -->
     </div>
+    <!-- 팝업 -->
+    <div class="pop_container" id="pop1">
+      <div class="pop_mask" onclick="popClose('#pop1')"></div>
+      <div class="pop_wrapper">
+        <div class="pop_box">
+          <!-- 내용 -->
+          <h1 class="pop_title">출금계좌 변경</h1>
+
+          <div class="flex_tit">
+            <span class="tit">예금주</span>
+          </div>
+          <div class="flex_input">
+            <input type="text" class="text" value="홍길동" placeholder="예금주명 입력" />
+          </div>
+
+          <div class="flex_tit">
+            <span class="tit">은행선택</span>
+          </div>
+          <div class="flex_input">
+            <select class="select wide">
+              <option disabled>은행을 선택하세요</option>
+              <option selected>한국은행</option>
+              <option>농협은행</option>
+              <option>우리은행</option>
+              <option>신한은행</option>
+            </select>
+          </div>
+
+          <div class="flex_tit">
+            <span class="tit">계좌번호</span>
+          </div>
+          <div class="flex_input">
+            <select class="select wide">
+              <option disabled selected>기호(‘-’)없이 숫자만 입력</option>
+              <option>0000-00-000000</option>
+              <option>1111-11-111111</option>
+              <option>2222-22-222222</option>
+            </select>
+          </div>
+
+          <div class="btn_box mt30">
+            <button class="btn_style h48 bd_gray">취소</button>
+            <button class="btn_style h48 bg_blue">변경</button>
+          </div>
+          <!--// 내용 -->
+        </div>
+      </div>
+    </div>
+    <script>
+      $(function () {
+        popOpen("#pop1");
+      });
+    </script>
+    <!--// 팝업 -->
   </body>
 </html>

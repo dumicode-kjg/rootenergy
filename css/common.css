@@ -17,14 +17,17 @@
 
 .ml20 { margin-left: 2rem !important; } 
 
+.pt4 { padding-top: 0.4rem !important; }
 .pt16 { padding-top: 1.6rem !important; } 
 .pt20 { padding-top: 2rem !important; } 
 .pt36 { padding-top: 3.6rem !important; } 
 .pt40 { padding-top: 4rem !important; } 
 
+.pr4 { padding-right: 0.4rem !important; } 
 .pr16 { padding-right: 1.6rem !important; } 
 .pr20 { padding-right: 2rem !important; } 
 
+.pb4 { padding-bottom: 0.4rem !important; } 
 .pb20 { padding-bottom: 2rem !important; } 
 .pb30 { padding-bottom: 3rem !important; } 
 .pb40 { padding-bottom: 4rem !important; } 
@@ -32,6 +35,7 @@
 .pb56 { padding-bottom: 5.6rem !important; } 
 .pb84 { padding-bottom: 8.4rem !important; } 
 
+.pl4 { padding-left: 0.4rem !important; } 
 .pl16 { padding-left: 1.6rem !important; } 
 .pl20 { padding-left: 2rem !important; } 
 
@@ -205,6 +209,7 @@
 .btn_style.h54 { height: 5.4rem; font-size: 1.7rem; font-weight: 700; } 
 .btn_style.bd_gray { border: 0.1rem solid #e0e1e2; background: #fff; color: #a3a7ab; } 
 .btn_style.bd_gray02 { border: 0.1rem solid #f2f2f2; background: #fff; color: #666; } 
+.btn_style.bd_gray03 { border: 0.1rem solid rgba(224, 225, 226, 0.5); background: none; color: #fff; } 
 .btn_style.bd_blue { border: 0.1rem solid #2c3db8; background: #fff; color: #2c3db8; } 
 .btn_style.bg_blue { border: 0.1rem solid #2c3db8; background: #2c3db8; color: #fff; } 
 
@@ -213,6 +218,8 @@
 .btn_box .btn_style + .btn_style { margin-left: 0.8rem; } 
 
 /* form */
+.flex_tit { display: flex; margin-top: 2rem; }
+.flex_tit .tit { margin: -0.4px 0; color: #666; font-size: 1.2rem; line-height: 1.6rem; font-weight: 400; }
 .flex_input { display: flex; flex-wrap: wrap; align-items: center; margin-top: 1.2rem; } 
 .flex_input > * + * { margin-left: 0.8rem; } 
 .flex_input input.text { flex: 1; min-width: 0; height: 4.4rem; padding: 0 1.5rem; border: 0.1rem solid #f2f2f2; border-radius: 1rem; font-size: 1.4rem; line-height: 1.5; font-weight: 600; background: #fbfbfb; outline: none; } 

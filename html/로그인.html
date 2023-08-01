@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>로그인</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <link type="text/css" rel="stylesheet" href="../js/swiper/swiper-bundle.min.css" />
+    <link type="text/css" rel="stylesheet" href="../js/nice-select/nice-select.css" />
+    <link type="text/css" rel="stylesheet" href="../css/style.css" />
+
+    <script src="../js/jquery-3.7.0.min.js"></script>
+    <script src="../js/swiper/swiper-bundle.min.js"></script>
+    <script src="../js/nice-select/jquery.nice-select.min.js"></script>
+    <script>
+      $(function () {
+        $("select.select").niceSelect();
+      });
+    </script>
+    <script src="../js/design.js"></script>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- header -->
+      <header id="header">
+        <div class="head_con">
+          <a href="#" class="btn_back"></a>
+        </div>
+      </header>
+      <!--// header -->
+
+      <!-- container -->
+      <div id="container">
+        <div class="login_wrap">
+          <div class="login_logo">
+            <p class="txt">환경을 생각하는 투자 플랫폼</p>
+            <h1 class="logo"><a href="#">ROOTENERGY</a></h1>
+          </div>
+
+          <div class="login_form">
+            <div class="flex_input">
+              <input type="text" class="text" placeholder="이메일을 입력해주세요" />
+            </div>
+            <div class="flex_input">
+              <input type="password" class="text" placeholder="비밀번호를 입력해주세요" />
+            </div>
+            <div class="flex_input">
+              <div class="label_box">
+                <input type="checkbox" id="save_chk01" checked="" />
+                <label for="save_chk01">
+                  <span class="txt">이메일 저장하기</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="btn_box mt30">
+              <button type="button" class="btn_style h48 bg_blue">로그인</button>
+            </div>
+
+            <ul class="login_links">
+              <li><a href="#">이메일 찾기</a></li>
+              <li><a href="#">비밀번호 찾기</a></li>
+              <li class="right_btn">
+                <a href="#" class="btn_join"><em>회원가입</em> 바로가기</a>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="login_sns">
+            <li>
+              <a href="#" class="inbox">
+                <div class="ico"><img src="../images/ico_sns_kakao.svg" alt="" /></div>
+                <span class="txt">카카오</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="inbox">
+                <div class="ico"><img src="../images/ico_sns_naver.svg" alt="" /></div>
+                <span class="txt">네이버</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--// container -->
+    </div>
+  </body>
+</html>

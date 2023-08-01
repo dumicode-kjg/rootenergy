@@ -85,9 +85,34 @@ $(function () {
 /* pop */
 function popOpen(divID) {
   $(divID).show().css("display", "flex");
-  $('body').addClass('pop_open');
+  $("body").addClass("pop_open");
 }
 function popClose(divID) {
   $(divID).hide();
-  $('body').removeClass('pop_open');
+  $("body").removeClass("pop_open");
 }
+
+/* modal */
+function modalOpen(divID) {
+  $(divID).show();
+}
+function modalClose(divID) {
+  $(divID).hide();
+}
+
+// checkBoxAll
+$(function () {
+  $(".terms_area .check_all").click(function () {
+    $(this).parents(".terms_box").siblings().find("input[type=checkbox]").prop("checked", $(this).prop("checked"));
+  });
+
+  $(".terms_list input[type=checkbox]").click(function () {
+    var lenTotal = $(this).parents(".terms_list").find("input[type=checkbox]").length;
+    var lenSelect = $(this).parents(".terms_list").find("input[type=checkbox]:checked").length;
+    if (lenTotal == lenSelect) {
+      $(this).parents(".terms_area").find(".check_all").prop("checked", true);
+    } else {
+      $(this).parents(".terms_area").find(".check_all").prop("checked", false);
+    }
+  });
+});

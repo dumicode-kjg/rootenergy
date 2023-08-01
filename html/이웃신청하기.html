@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>이웃신청하기</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <link type="text/css" rel="stylesheet" href="../js/swiper/swiper-bundle.min.css" />
+    <link type="text/css" rel="stylesheet" href="../js/nice-select/nice-select.css" />
+    <link type="text/css" rel="stylesheet" href="../css/style.css" />
+
+    <script src="../js/jquery-3.7.0.min.js"></script>
+    <script src="../js/swiper/swiper-bundle.min.js"></script>
+    <script src="../js/nice-select/jquery.nice-select.min.js"></script>
+    <script>
+      $(function () {
+        $("select.select").niceSelect();
+      });
+    </script>
+    <script src="../js/design.js"></script>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- header -->
+      <header id="header">
+        <div class="head_con">
+          <a href="#" class="btn_back"></a>
+        </div>
+      </header>
+      <!--// header -->
+
+      <!-- container -->
+      <div id="container">
+        <div class="sub_title_box center">
+          <h2 class="title">이웃신청</h2>
+          <p class="title_p">
+            혁신상품의 투자를 이용하기 위해,<br />
+            사용자 거주 주소지를 확인 후 순차적으로 승인처리 됩니다.
+          </p>
+        </div>
+
+        <div class="form_fileupload">
+          <dl class="tbl_tr">
+            <dt>상품번호</dt>
+            <dd>R000377</dd>
+          </dl>
+          <dl class="tbl_tr">
+            <dt>상품명</dt>
+            <dd>충주시·안산시 솔라9 지붕형<br />태양광 발전소 7호</dd>
+          </dl>
+          <h3 class="sub_title_12 mt16">인증자료</h3>
+          <div class="fileupload_box">
+            <input type="file" id="file" />
+            <label for="file">
+              <i class="ico"></i>
+              <span class="txt">파일 추가..</span>
+            </label>
+          </div>
+          <div class="mt12 pl20 pr20">
+            <p class="star_notif">* 거주 주소를 증빙하는 서류 (예: 주민등록초본)</p>
+            <p class="star_notif">* 등/초본은 1개월이내 발급한 서류만 유효합니다.</p>
+          </div>
+          <div class="mt20">
+            <div class="filename_box">
+              <a href="#" class="filename">신청.jpg</a>
+              <button type="button" class="btn_del"></button>
+            </div>
+            <div class="filename_box">
+              <a href="#" class="filename">충주시 신청.pdf</a>
+              <button type="button" class="btn_del"></button>
+            </div>
+          </div>
+        </div>
+
+        <p class="txt_notif">
+          보안망으로 인하여 정상적으로 첨부가 되지 않을 경우 로그인 아이디를 포함하여 아래 고객센터 메일로 전달주시면 빠른 처리 진행하겠습니다. <br />
+          <br />
+          <a href="mailto:ask@rootenery.co.kr" class="mailto">Email : ask@rootenery.co.kr</a>
+        </p>
+
+        <div class="btn_box mt40 pr16 pb30 pl16">
+          <button type="button" class="btn_style h48 bg_blue">주민신청하기</button>
+        </div>
+      </div>
+      <!--// container -->
+    </div>
+  </body>
+</html>

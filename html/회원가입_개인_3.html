@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>회원가입</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <link type="text/css" rel="stylesheet" href="../js/swiper/swiper-bundle.min.css" />
+    <link type="text/css" rel="stylesheet" href="../js/nice-select/nice-select.css" />
+    <link type="text/css" rel="stylesheet" href="../css/style.css" />
+
+    <script src="../js/jquery-3.7.0.min.js"></script>
+    <script src="../js/swiper/swiper-bundle.min.js"></script>
+    <script src="../js/nice-select/jquery.nice-select.min.js"></script>
+    <script>
+      $(function () {
+        $("select.select").niceSelect();
+      });
+    </script>
+    <script src="../js/design.js"></script>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- header -->
+      <header id="header">
+        <div class="head_con">
+          <a href="#" class="btn_back"></a>
+          <h1 class="title">회원가입</h1>
+        </div>
+      </header>
+      <!--// header -->
+
+      <!-- container -->
+      <div id="container">
+        <div class="sub_title_box">
+          <h2 class="title">
+            휴대폰 본인 인증을 <br />
+            진행해 주세요
+          </h2>
+        </div>
+
+        <div class="mt10 pr20 pl20">
+          <div class="flex_tit">
+            <span class="tit">이름</span>
+          </div>
+          <div class="flex_input">
+            <input type="text" class="text" placeholder="이름 입력" />
+          </div>
+
+          <div class="flex_tit">
+            <span class="tit">주민등록번호</span>
+          </div>
+          <div class="flex_input">
+            <input type="number" class="text" placeholder="생년월일 6자리" />
+            <span class="txt_between">-</span>
+            <input type="password" class="text" placeholder="등록번호 뒷자리입력" />
+          </div>
+
+          <div class="flex_tit">
+            <span class="tit">휴대폰 인증</span>
+          </div>
+          <div class="flex_input">
+            <select class="select wide">
+              <option disabled selected>통신사 선택</option>
+              <option>KT</option>
+              <option>LGU+</option>
+              <option>SKT</option>
+            </select>
+          </div>
+          <div class="flex_input">
+            <input type="number" class="text" placeholder="휴대폰번호 입력" />
+            <button type="button" class="btn_style h44 bd_blue">인증요청</button>
+          </div>
+          <div class="flex_input code">
+            <input type="number" class="text" placeholder="인증번호 6자리 입력" />
+            <button type="button" class="btn_style h44 bg_blue">확인</button>
+            <span class="code_time">02:00</span>
+          </div>
+          <p class="star_notif mt12">* 인증문자가 도착하지 않으면 어쩌고저쩌고 확인해 주세요.</p>
+        </div>
+      </div>
+      <!--// container -->
+
+      <div class="btn_box mt20">
+        <button type="button" class="btn_style h54 bg_blue">다음</button>
+      </div>
+    </div>
+  </body>
+</html>

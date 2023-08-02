@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>고객센터_공지사항</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <link type="text/css" rel="stylesheet" href="../js/swiper/swiper-bundle.min.css" />
+    <link type="text/css" rel="stylesheet" href="../js/nice-select/nice-select.css" />
+    <link type="text/css" rel="stylesheet" href="../css/style.css" />
+
+    <script src="../js/jquery-3.7.0.min.js"></script>
+    <script src="../js/swiper/swiper-bundle.min.js"></script>
+    <script src="../js/nice-select/jquery.nice-select.min.js"></script>
+    <script>
+      $(function () {
+        $("select.select").niceSelect();
+      });
+    </script>
+    <script src="../js/design.js"></script>
+  </head>
+
+  <body>
+    <div id="wrap" class="bg">
+      <!-- header -->
+      <header id="header">
+        <div class="head_con">
+          <a href="#" class="btn_back"></a>
+        </div>
+      </header>
+      <!--// header -->
+
+      <!-- container -->
+      <div id="container">
+        
+        <div class="sub_head">
+          <h2 class="title">고객센터</h2>
+        </div>
+
+        <div class="tab_swiper">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <a href="#">공지사항</a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#">자주묻는질문</a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#">언론보도</a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#">공시안내</a>
+            </li>
+          </ul>
+        </div>
+        <script>
+          $(function () {
+            tabGo(0);
+          });
+        </script>
+
+        <ul class="sub_notice">
+          <li>
+            <div class="in_head"></div>
+            <div class="in_cont"></div>
+          </li>
+        </ul>
+      </div>
+      <!--// container -->
+
+      <div class="btn_box mt20 pr16 pl16 pb56">
+        <a href="#" class="btn_style h48 bg_blue">바로 투자하기</a>
+      </div>
+    </div>
+  </body>
+</html>

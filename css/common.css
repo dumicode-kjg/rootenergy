@@ -1006,3 +1006,5 @@ select.area { height: 3.2rem; padding: 0 2.4rem 0 2.8rem; border: 0.1rem solid r
 .terms_list > li + li { margin-top: 2rem; } 
 .terms_list .label_box { flex: none; padding: 0; } 
 .terms_list .link { flex: 1; margin-left: 0.8rem; background: url(../images/arrow_right.svg) no-repeat right center/1.4rem; font-size: 1.3rem; line-height: 2rem; } 
+
+.join_bd_box { margin: 2rem 1.6rem 0; padding: 0.4rem 2rem 2.4rem; border: 0.1rem solid #e0e1e2; border-radius: 1rem; }

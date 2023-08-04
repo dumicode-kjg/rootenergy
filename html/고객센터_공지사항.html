@@ -173,6 +173,15 @@
             <span class="current">1/30</span>
           </a>
         </div>
+
+        <script>
+          $(function(){
+            $('.sub_notice .in_head').on('click', function(){
+              $(this).toggleClass('on');
+              $(this).next('.in_cont').slideToggle('fast');
+            })
+          })
+        </script>
       </div>
       <!--// container -->
 

@@ -1014,4 +1014,11 @@ select.area { height: 3.2rem; padding: 0 2.4rem 0 2.8rem; border: 0.1rem solid r
 .sub_head .bgbox { width: 100%; height: 14rem; border-radius: 0 0 2rem 2rem; background-repeat: no-repeat; background-position: center; background-size: cover; } 
 .sub_head .title { position: absolute; bottom: 3rem; left: 2rem; color: #fff; font-size: 2rem; line-height: 1.4; font-weight: 700; } 
 
-.sub_notice { } 
+.sub_notice { margin-top: 3rem; } 
+.sub_notice > li { position: relative; background: #fff; box-shadow: 0 0.1rem 0 0 rgba(224, 225, 226, 0.50); }
+.sub_notice > li + li { margin-top: 0.8rem; }
+.sub_notice .in_head { position: relative; padding: 1.6rem 5.4rem 1.6rem 1.6rem; cursor: pointer; }
+.sub_notice .in_head::before { content: ''; position: absolute; top: 2rem; right: 2rem; width: 1.8rem; height: 1.8rem; background: url(../images/ico_toggle.svg) no-repeat center/contain; }
+.sub_notice .in_head .type { color: #666; font-size: 1.2rem; line-height: 1.3; font-weight: 400; }
+.sub_notice .in_head .tit { margin-top: 0.8rem; font-size: 1.5rem; line-height: 1.3; font-weight: 600; }
+.sub_notice .in_head .date { margin-top: 0.8rem; color: #bfc3c7; font-size: 1.2rem; line-height: 1.3; font-weight: 400; }

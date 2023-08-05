@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>고객센터_공시안내_경영공시</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <link type="text/css" rel="stylesheet" href="../js/swiper/swiper-bundle.min.css" />
+    <link type="text/css" rel="stylesheet" href="../js/nice-select/nice-select.css" />
+    <link type="text/css" rel="stylesheet" href="../css/style.css" />
+
+    <script src="../js/jquery-3.7.0.min.js"></script>
+    <script src="../js/swiper/swiper-bundle.min.js"></script>
+    <script src="../js/nice-select/jquery.nice-select.min.js"></script>
+    <script>
+      $(function () {
+        $("select.select").niceSelect();
+      });
+    </script>
+    <script src="../js/design.js"></script>
+  </head>
+
+  <body>
+    <div id="wrap" class="bg">
+      <!-- header -->
+      <header id="header">
+        <div class="head_con">
+          <a href="#" class="btn_back white"></a>
+        </div>
+      </header>
+      <!--// header -->
+
+      <!-- container -->
+      <div id="container">
+        <div class="sub_head">
+          <div class="bgbox" style="background-image: url(../images/bg_sub_cscenter.png)"></div>
+          <h2 class="title">고객센터</h2>
+        </div>
+
+        <div class="tab_swiper">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <a href="#">공지사항</a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#">자주묻는질문</a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#">언론보도</a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#">공시안내</a>
+            </li>
+          </ul>
+        </div>
+        <script>
+          $(function () {
+            tabGo(3);
+          });
+        </script>
+
+        <ul class="choice_chips mt24 pl16 pr16">
+          <li><a href="#">경영공시</a></li>
+          <li><a href="#" class="active">상품공시</a></li>
+        </ul>
+
+        <div class="sub_whitebox mt20">
+          <div class="sub_s_title_box">
+            <h3 class="title">상품유형별 취급현황</h3>
+            <select class="default">
+              <option>2023.01</option>
+              <option>2023.02</option>
+            </select>
+          </div>
+          <div class="mt20 mr20 mb24 ml20">
+            <table class="table_data">
+              <caption>
+                수수료 안내
+              </caption>
+              <colgroup>
+                <col style="width: 31.5%" />
+                <col />
+                <col />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col">상품 유형</th>
+                  <th scope="col">누적대출액 (원)</th>
+                  <th scope="col">대출잔액 (원)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>개인신용</td>
+                  <td>332,169,500,000</td>
+                  <td>332,169,500,000</td>
+                </tr>
+                <tr>
+                  <td>부동산담보</td>
+                  <td>332,169,500,000</td>
+                  <td>332,169,500,000</td>
+                </tr>
+                <tr>
+                  <td>-부동산담보(주택)</td>
+                  <td>332,169,500,000</td>
+                  <td>332,169,500,000</td>
+                </tr>
+                <tr>
+                  <td>-부동산담보(기타)</td>
+                  <td>332,169,500,000</td>
+                  <td>332,169,500,000</td>
+                </tr>
+                <tr>
+                  <td>부동산PF</td>
+                  <td>332,169,500,000</td>
+                  <td>332,169,500,000</td>
+                </tr>
+                <tr>
+                  <td>어음/매출채권 담보</td>
+                  <td>332,169,500,000</td>
+                  <td>332,169,500,000</td>
+                </tr>
+                <tr>
+                  <td>기타</td>
+                  <td>332,169,500,000</td>
+                  <td>332,169,500,000</td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="star_notif mt12">* 신규 상품 취급 없이 연체중인 채권만 남아있는 상품유형의 경우 공시된 연체율이 높습니다. (부동산PF, 부동산담보(기타), 어음/매출채권 담보, 기타)</p>
+          </div>
+        </div>
+
+        <div class="sub_whitebox mt8">
+          <div class="sub_s_title_box">
+            <h3 class="title">취급현황</h3>
+            <select class="default">
+              <option>2023.01</option>
+              <option>2023.02</option>
+            </select>
+          </div>
+          <div class="dl_between_box">
+            <dl class="dl_between">
+              <dt>누적대출액</dt>
+              <dd>17,069.51 억원</dd>
+            </dl>
+            <dl class="dl_between">
+              <dt>대출잔액</dt>
+              <dd>2,998.52 억원</dd>
+            </dl>
+            <dl class="dl_between">
+              <dt>연체율</dt>
+              <dd>5.68 %</dd>
+            </dl>
+            <dl class="dl_between">
+              <dt>연체건수</dt>
+              <dd>205 건</dd>
+            </dl>
+            <dl class="dl_between">
+              <dt>연체건수 비중</dt>
+              <dd>0.92 %</dd>
+            </dl>
+            <dl class="dl_between">
+              <dt>손실률</dt>
+              <dd>1.43 %</dd>
+            </dl>
+            <dl class="dl_between">
+              <dt>누적 자기자금 투자현황</dt>
+              <dd>-</dd>
+            </dl>
+            <dl class="dl_between">
+              <dt>자기자금 투자현황</dt>
+              <dd>-</dd>
+            </dl>
+          </div>
+        </div>
+
+        <div class="sub_whitebox mt8 pb24">
+          <div class="sub_s_title_box">
+            <h3 class="title">거래구조 및 영업방식</h3>
+          </div>
+          <ul class="dot_txtlist">
+            <li>루트에너지는 차입자로부터 대출신청을, 투자자로부터 투자신청을 받습니다.</li>
+            <li>투자자는 농협은행이 관리하는 계좌(예치기관 계좌)로 투자금을 입금하고, 농협은행은 루트에너지 지시에 따라 차입자에게 대출금을 지급합니다.</li>
+            <li>차입자는 예치기관 계좌로 상환금을 납부하고, 농협은행은 루트엥너지 지시에 따라 상환금을 투자자에게 정산합니다.</li>
+            <li>위 과정에서 루트에너지는 차입자와 투자자로부터 소정의 플랫폼이용료를 지급받습니다.</li>
+          </ul>
+          <div class="sub_con_imgbox">
+            <img src="../images/img_business_method.png" alt="" />
+          </div>
+        </div>
+
+        <div class="sub_whitebox mt8 pb36">
+          <div class="sub_s_title_box">
+            <h3 class="title">청산업무처리절차</h3>
+          </div>
+          <div class="sub_con_imgbox">
+            <img src="../images/img_sub_step.png" alt="" />
+          </div>
+          <div class="pr20 pl20">
+            <p class="mt16 color_gray f14">루트에너지가 온투법 제27조에 따라 등록취소, 해산결의 파산선고 등으로 영업을 지속할 수 없는 경우, 법무법인 에너지에 원리금 상환·배분업무, 연계대출채권 관리계획, 투자금 및 상환금 관리계획, 연계투자 및 대출계약 관리계획 업무 등을 위탁합니다.</p>
+            <p class="star_notif mt12">* 당사와 법무법인 에너지는 2020.8.25 <청산업무위임계약>을 체결하여 이용자 보호에 만전을 기하고 있습니다.</p>
+          </div>
+        </div>
+
+        <div class="sub_whitebox mt8 pb36">
+          <div class="sub_s_title_box">
+            <h3 class="title">이해상충 방지체계</h3>
+          </div>
+          <div class="pr20 pl20">
+            <h4 class="mt20 color_black f16">하나</h4>
+            <p class="mt10 color_gray f14">루트에너지는 이용자의 이익을 최우선으로 하여 이용자의 자산에 대해 신의 성실의무를 지니며, 이용자 이익보호 책임을 이행함에 있어 주요 이해관계자간 이해상충이 될 가능성을 인지하고 있습니다.</p>
+
+            <h4 class="mt20 color_black f16">둘</h4>
+            <p class="mt10 color_gray f14">온투법 제5조 제18조에 의거, 당사는 &lt;이해상충방지체계에 관한 기준&gt;을 제정 운영하고 있으며 효과적인 내부통제체계 및 시스템을 구축하여 이해상충 문제를 엄격하게 관리하고 있습니다.</p>
+          </div>
+        </div>
+      </div>
+      <!--// container -->
+    </div>
+  </body>
+</html>

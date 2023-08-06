@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>프로모션</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <link type="text/css" rel="stylesheet" href="../js/swiper/swiper-bundle.min.css" />
+    <link type="text/css" rel="stylesheet" href="../js/nice-select/nice-select.css" />
+    <link type="text/css" rel="stylesheet" href="../css/style.css" />
+
+    <script src="../js/jquery-3.7.0.min.js"></script>
+    <script src="../js/swiper/swiper-bundle.min.js"></script>
+    <script src="../js/nice-select/jquery.nice-select.min.js"></script>
+    <script>
+      $(function () {
+        $("select.select").niceSelect();
+      });
+    </script>
+    <script src="../js/design.js"></script>
+  </head>
+
+  <body>
+    <div id="wrap" class="bg">
+      <!-- header -->
+      <header id="header">
+        <div class="head_con">
+          <a href="#" class="btn_back white"></a>
+        </div>
+      </header>
+      <!--// header -->
+
+      <!-- container -->
+      <div id="container">
+        
+        <div class="sub_head">
+          <div class="bgbox" style="background-image: url(../images/bg_sub_promotion.png);"></div>
+          <h2 class="title">프로모션</h2>
+        </div>
+
+        <div class="tab_swiper">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <a href="#">진행중 이벤트</a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#">종료된 이벤트</a>
+            </li>
+          </ul>
+        </div>
+        <script>
+          $(function () {
+            tabGo(0);
+          });
+        </script>
+
+        <ul class="gallery_list full">
+          <li>
+            <a href="#" class="inbox">
+              <div class="imgbox">
+                <img src="../images/img_promotion_list01.png" alt="">
+                <span class="d_day">D-22</span>
+              </div>
+              <div class="txtbox">
+                <p class="tit">[신규투자자] 상품권 이벤트</p>
+                <p class="date">2023.06.17 - 2023.06.30</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="inbox">
+              <div class="imgbox">
+                <img src="../images/img_promotion_list02.png" alt="">
+                <span class="d_day">D-18</span>
+              </div>
+              <div class="txtbox">
+                <p class="tit">투자의 달인 선정이벤트</p>
+                <p class="date">2023.06.17 - 2023.06.30</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+
+        <div class="list_more pb56">
+          <a href="#" class="btn">
+            <span class="txt">더보기</span>
+            <span class="current">1/30</span>
+          </a>
+        </div>
+
+      </div>
+      <!--// container -->
+
+    </div>
+  </body>
+</html>

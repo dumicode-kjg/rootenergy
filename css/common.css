@@ -89,7 +89,7 @@
 #wrap.bg { background: #f5f7fa; } 
 
 /* header */
-.head_con { display: flex; align-items: center; position: relative; height: 4.8rem; padding: 0 1.6rem; z-index: 10; } 
+.head_con { display: flex; align-items: center; position: relative; height: 4.8rem; padding: 0 1.6rem; } 
 .head_con.main { background: #fff; } 
 .head_con .btn_my { width: 2.4rem; height: 2.4rem; margin-right: auto; background: url(../images/ico_my.svg) no-repeat center center/contain; } 
 .head_con .logo a { display: block; width: 13.2rem; height: 2.4rem; background: url(../images/logo.svg) no-repeat center center/contain; color: transparent; font-size: 0; } 
@@ -619,7 +619,7 @@ select.area { height: 3.2rem; padding: 0 2.4rem 0 2.8rem; border: 0.1rem solid r
 .detail_infobox { margin: 2.4rem 1.6rem 4rem; padding: 2rem 2rem 3rem; border-radius: 1rem; box-shadow: 0 0.2rem 0.8rem 0 rgba(81, 108, 137, 0.05); background: #fff; } 
 .detail_infobox .title { font-size: 1.8rem; line-height: 1.4; font-weight: 700; word-break: keep-all; } 
 .detail_infotab { display: flex; margin: 3.2rem 0 1.2rem; } 
-.detail_infotab > li { flex: 1; opacity: 0.5; cursor: pointer; } 
+.detail_infotab > li { flex: 1; opacity: 0.5; } 
 .detail_infotab .inbox { display: flex; flex-direction: column; position: relative; height: 100%; padding: 1.6rem 0.8rem; border: 0.1rem solid transparent; border-radius: 1rem; text-align: center; } 
 .detail_infotab .inbox .di_type { display: none; position: absolute; top: -1rem; left: 50%; padding: 0 0.8rem; border-radius: 0.9rem; background: #2c3db8; color: #fff; font-size: 1.1rem; line-height: 1.8rem; font-weight: 500; white-space: nowrap; transform: translateX(-50%); } 
 .detail_infotab .inbox .imgbox { display: flex; justify-content: center; align-items: center; width: 4.2rem; height: 4.2rem; margin: 0 auto; } 

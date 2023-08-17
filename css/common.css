@@ -364,6 +364,7 @@ select.area { height: 3.2rem; padding: 0 2.4rem 0 2.8rem; border: 0.1rem solid r
 .progress_group .flex_dl dl dt.point::before { content: ''; position: absolute; top: 0.1rem; right: -0.8rem; width: 0.5rem; height: 0.5rem; border-radius: 100%; background: #197cff; } 
 .progress_group .flex_dl dl dd { margin-top: 0.6rem; font-size: 2.3rem; line-height: 3.2rem; font-weight: 700; } 
 .progress_group .flex_dl dl dd.small { font-size: 1.8rem; } 
+.progress_group .txt_stit { margin-bottom: 1rem; color: #666; font-size: 1.2rem; line-height: 1.3; font-weight: 400; } 
 .progress_group .progress_bar { position: relative; height: 0.3rem; border-radius: 0.3rem; } 
 .progress_group .progress_bar.over { background-color: #e0e1e2; } 
 .progress_group .progress_bar::before { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 0.1rem; background-color: #e0e1e2; } 
@@ -881,7 +882,7 @@ select.area { height: 3.2rem; padding: 0 2.4rem 0 2.8rem; border: 0.1rem solid r
 .schedule_calendar .in_cont table { width: 100%; table-layout: fixed; font-size: 1.2rem; line-height: 1.3; } 
 .schedule_calendar .in_cont table th { height: 4rem; padding: 0.4rem; color: #bfc3c7; font-weight: 400; text-align: center; } 
 .schedule_calendar .in_cont table td { height: 4rem; padding: 0.4rem; color: #666; font-weight: 400; text-align: center; } 
-.schedule_calendar .in_cont table td .inbox { display: flex; justify-content: center; align-items: center; position: relative; width: 3.2rem; height: 3.2rem; border-radius: 1rem; color: #666; } 
+.schedule_calendar .in_cont table td .inbox { display: flex; justify-content: center; align-items: center; position: relative; width: 3.2rem; height: 3.2rem; margin: 0 auto; border-radius: 1rem; color: #666; } 
 .schedule_calendar .in_cont table td .inbox.have::before { content: ''; position: absolute; top: 0.9rem; right: 0.4rem; width: 0.4rem; height: 0.4rem; border-radius: 100%; background: #197cff; } 
 .schedule_calendar .in_cont table td .inbox.current { border: 0.05rem solid rgba(119, 171, 248, 0.30); background: rgba(119, 171, 248, 0.05); color: #222; font-weight: 600; } 
 
@@ -1197,4 +1198,4 @@ select.default { height: 2.8rem; padding: 0 3rem 0 0.8rem; border: 0.1rem solid 
 .guide_step > li .imgbox img { width: 4.7rem; height: 5.2rem; object-fit: contain; mix-blend-mode: multiply; } 
 .guide_step > li .tit { margin-top: 1.2rem; font-size: 1.5rem; line-height: 1.3; font-weight: 600; } 
 .guide_step > li .txt { margin-top: 0.8rem; font-size: 1.5rem; line-height: 1.4; font-weight: 400; } 
-.guide_step > li:last-child::before { content: ''; position: absolute; top: 0.5rem; bottom: 0; left: 0; width: 1.1rem; background: #f5f7fa; }
+.guide_step > li:last-child::before { content: ''; position: absolute; top: 0.5rem; bottom: 0; left: 0; width: 1.1rem; background: #f5f7fa; } 

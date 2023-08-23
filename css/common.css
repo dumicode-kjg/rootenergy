@@ -1174,6 +1174,7 @@ select.default { height: 2.8rem; padding: 0 3rem 0 0.8rem; border: 0.1rem solid 
 .sub_guide_view .title { margin: 4rem 2rem 0; font-size: 1.7rem; line-height: 1.3; font-weight: 700; } 
 .sub_guide_view .condition { display: flex; margin: 1.2rem 1.6rem 0; border: 0.1rem solid #e0e1e2; border-radius: 1rem; background: #fff; box-shadow: 0 0.2rem 0.8rem 0 rgba(81, 108, 137, 0.05); } 
 .sub_guide_view .condition > li { position: relative; width: 50%; padding: 2.2rem 0 2rem; text-align: center; } 
+.sub_guide_view .condition > li + li::before { content: ''; position: absolute; top: 50%; left: 0; width: 3.2rem; height: 3.2rem; margin: -1.6rem 0 0 -1.6rem; background: url(../images/ico_plus_blue.svg) no-repeat center/contain; } 
 .sub_guide_view .condition .imgbox img { width: 5.6rem; height: 5.2rem; object-fit: contain; } 
 .sub_guide_view .condition .tit { margin-top: 1.2rem; font-size: 1.5rem; line-height: 1.3; font-weight: 600; } 
 .sub_guide_view .condition .txt { margin-top: 0.8rem; font-size: 1.4rem; line-height: 1.3; font-weight: 400; } 

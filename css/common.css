@@ -1200,3 +1200,6 @@ select.default { height: 2.8rem; padding: 0 3rem 0 0.8rem; border: 0.1rem solid 
 .guide_step > li .tit { margin-top: 1.2rem; font-size: 1.5rem; line-height: 1.3; font-weight: 600; } 
 .guide_step > li .txt { margin-top: 0.8rem; font-size: 1.5rem; line-height: 1.4; font-weight: 400; } 
 .guide_step > li:last-child::before { content: ''; position: absolute; top: 0.5rem; bottom: 0; left: 0; width: 1.1rem; background: #f5f7fa; } 
+
+.fix_btn_wrap { height: 5.4rem; }
+.fix_btn_wrap .btn_box { position: fixed; right: 0; bottom: 0; left: 0; z-index: 50; }
